@@ -1,0 +1,14 @@
+# R / RStudio
+.Rhistory
+.RData
+.Rproj.user/
+*_cache/
+*_files/
+
+# HTML gerado ao compilar os .Rmd (o código já reproduz tudo)
+*.html
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini

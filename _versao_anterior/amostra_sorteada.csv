@@ -1,0 +1,676 @@
+date,decada,song,artist,etapa,duracao_s,genero
+1959-04-20,1950s,Come Softly To Me,The Fleetwoods,piloto,142.053,Grupo/Outro
+1959-06-08,1950s,The Battle Of New Orleans,Johnny Horton,piloto,151,Masculino
+1959-04-06,1950s,Venus,Frankie Avalon,piloto,141,Masculino
+1959-06-29,1950s,The Battle Of New Orleans,Johnny Horton,piloto,151,Masculino
+1958-09-01,1950s,Nel Blu Dipinto Di Blu (Volaré),Domenico Modugno,piloto,207.04,Masculino
+1959-09-28,1950s,Sleep Walk,Santo & Johnny,complemento,143.7865,Grupo/Outro
+1958-11-17,1950s,Tom Dooley,The Kingston Trio,complemento,197.96,Grupo/Outro
+1959-10-19,1950s,Mack The Knife,Bobby Darin,complemento,186,Masculino
+1959-01-05,1950s,The Chipmunk Song,The Chipmunks With David Seville,complemento,137,NA
+1959-05-25,1950s,Kansas City,Wilbert Harrison,complemento,146.066,Masculino
+1958-12-22,1950s,The Chipmunk Song,The Chipmunks With David Seville,complemento,137,NA
+1959-10-05,1950s,Mack The Knife,Bobby Darin,complemento,186,Masculino
+1959-09-14,1950s,The Three Bells,The Browns,complemento,NA,Grupo/Outro
+1959-08-31,1950s,The Three Bells,The Browns,complemento,NA,Grupo/Outro
+1958-08-18,1950s,Nel Blu Dipinto Di Blu (Volaré),Domenico Modugno,complemento,207.04,Masculino
+1958-10-06,1950s,It's All In The Game,Tommy Edwards,complemento,157.08,NA
+1958-12-08,1950s,"To Know Him, Is To Love Him",The Teddy Bears,complemento,143.626,NA
+1959-03-23,1950s,Venus,Frankie Avalon,complemento,141,Masculino
+1959-12-07,1950s,Mack The Knife,Bobby Darin,complemento,186,Masculino
+1959-08-10,1950s,A Big Hunk O' Love,Elvis Presley With The Jordanaires,complemento,NA,NA
+1959-12-14,1950s,Heartaches By The Number,Guy Mitchell,complemento,156.053,Masculino
+1959-02-16,1950s,Stagger Lee,Lloyd Price,complemento,169.22,NA
+1959-06-15,1950s,The Battle Of New Orleans,Johnny Horton,complemento,151,Masculino
+1959-06-22,1950s,The Battle Of New Orleans,Johnny Horton,complemento,151,Masculino
+1958-12-29,1950s,The Chipmunk Song,The Chipmunks With David Seville,complemento,137,NA
+1958-09-22,1950s,Nel Blu Dipinto Di Blu (Volaré),Domenico Modugno,complemento,207.04,Masculino
+1959-08-03,1950s,Lonely Boy,Paul Anka,complemento,NA,Masculino
+1958-08-11,1950s,Poor Little Fool,Ricky Nelson,complemento,152.4,Masculino
+1959-03-16,1950s,Venus,Frankie Avalon,complemento,141,Masculino
+1959-11-30,1950s,Mack The Knife,Bobby Darin,complemento,186,Masculino
+1959-12-28,1950s,Why,Frankie Avalon,complemento,157.8665,Masculino
+1959-11-16,1950s,Mr. Blue,The Fleetwoods,complemento,NA,Grupo/Outro
+1959-07-20,1950s,Lonely Boy,Paul Anka,complemento,NA,Masculino
+1959-09-21,1950s,Sleep Walk,Santo & Johnny,complemento,143.7865,Grupo/Outro
+1958-12-15,1950s,"To Know Him, Is To Love Him",The Teddy Bears,complemento,143.626,NA
+1959-10-26,1950s,Mack The Knife,Bobby Darin,complemento,186,Masculino
+1958-11-10,1950s,It's Only Make Believe,Conway Twitty,complemento,141,Masculino
+1959-01-12,1950s,The Chipmunk Song,The Chipmunks With David Seville,complemento,137,NA
+1959-11-09,1950s,Mack The Knife,Bobby Darin,complemento,186,Masculino
+1959-09-07,1950s,The Three Bells,The Browns,complemento,NA,Grupo/Outro
+1958-09-29,1950s,It's All In The Game,Tommy Edwards,complemento,157.08,NA
+1959-02-09,1950s,Stagger Lee,Lloyd Price,complemento,169.22,NA
+1965-07-03,1960s,I Can't Help Myself (Sugar Pie Honey Bunch),Four Tops,piloto,164.2995,Grupo/Outro
+1966-01-08,1960s,We Can Work It Out,The Beatles,piloto,135.102,Grupo/Outro
+1961-07-03,1960s,Quarter To Three,U.S. Bonds,piloto,222.5,NA
+1966-09-10,1960s,You Can't Hurry Love,The Supremes,piloto,169.853,Grupo/Outro
+1962-02-10,1960s,Peppermint Twist - Part I,Joey Dee & the Starliters,piloto,106,Grupo/Outro
+1961-03-06,1960s,Pony Time,Chubby Checker,complemento,148.0265,Masculino
+1966-11-12,1960s,Poor Side Of Town,Johnny Rivers,complemento,215,Masculino
+1966-09-17,1960s,You Can't Hurry Love,The Supremes,complemento,169.853,Grupo/Outro
+1962-06-23,1960s,I Can't Stop Loving You,Ray Charles,complemento,253.2,Masculino
+1969-05-31,1960s,Get Back,The Beatles With Billy Preston,complemento,192.5,NA
+1962-12-22,1960s,Telstar,The Tornadoes,complemento,194,Grupo/Outro
+1968-02-17,1960s,Love Is Blue (L'amour Est Bleu),Paul Mauriat And His Orchestra,complemento,153,NA
+1963-04-06,1960s,He's So Fine,The Chiffons,complemento,113.34649999999999,Grupo/Outro
+1964-12-12,1960s,Mr. Lonely,Bobby Vinton,complemento,162.586,Masculino
+1961-07-31,1960s,Tossin' And Turnin',Bobby Lewis,complemento,147.493,Masculino
+1967-01-28,1960s,I'm A Believer,The Monkees,complemento,166.64,Grupo/Outro
+1963-11-09,1960s,Sugar Shack,Jimmy Gilmer And The Fireballs,complemento,119.5,Grupo/Outro
+1966-02-26,1960s,These Boots Are Made For Walkin',Nancy Sinatra,complemento,163,NA
+1969-11-08,1960s,Wedding Bell Blues,The 5th Dimension,complemento,164.11950000000002,NA
+1965-10-09,1960s,Yesterday,The Beatles,complemento,NA,Grupo/Outro
+1968-05-04,1960s,Honey,Bobby Goldsboro,complemento,237,NA
+1960-07-18,1960s,I'm Sorry,Brenda Lee,complemento,162,NA
+1960-09-12,1960s,It's Now Or Never,Elvis Presley With The Jordanaires,complemento,196,NA
+1963-04-27,1960s,I Will Follow Him,Little Peggy March,complemento,NA,NA
+1964-11-21,1960s,Baby Love,The Supremes,complemento,160.48000000000002,Grupo/Outro
+1963-09-28,1960s,Blue Velvet,Bobby Vinton,complemento,169.3665,Masculino
+1969-08-16,1960s,In The Year 2525,Zager & Evans,complemento,NA,NA
+1964-12-19,1960s,Come See About Me,The Supremes,complemento,158.813,Grupo/Outro
+1960-10-31,1960s,Save The Last Dance For Me,The Drifters,complemento,142.50650000000002,Grupo/Outro
+1965-01-09,1960s,I Feel Fine,The Beatles,complemento,NA,Grupo/Outro
+1966-11-26,1960s,You Keep Me Hangin' On,The Supremes,complemento,165.25,Grupo/Outro
+1966-07-30,1960s,Wild Thing,The Troggs,complemento,159.2465,Grupo/Outro
+1967-10-07,1960s,The Letter,The Box Tops,complemento,115.56,Grupo/Outro
+1969-07-19,1960s,In The Year 2525,Zager & Evans,complemento,NA,NA
+1967-08-26,1960s,Ode To Billie Joe,Bobbie Gentry,complemento,253.586,Feminino
+1961-03-20,1960s,Surrender,Elvis Presley With The Jordanaires,complemento,NA,NA
+1967-04-08,1960s,Happy Together,The Turtles,complemento,173.973,Grupo/Outro
+1961-01-23,1960s,Wonderland By Night,Bert Kaempfert And His Orchestra,complemento,194.913,Grupo/Outro
+1961-01-16,1960s,Wonderland By Night,Bert Kaempfert And His Orchestra,complemento,194.913,Grupo/Outro
+1960-04-18,1960s,"The Theme From ""A Summer Place""",Percy Faith And His Orchestra,complemento,142.692,Grupo/Outro
+1965-02-20,1960s,This Diamond Ring,Gary Lewis And The Playboys,complemento,NA,Grupo/Outro
+1966-05-14,1960s,"Monday, Monday",The Mamas & The Papas,complemento,202.08,Grupo/Outro
+1966-07-23,1960s,Hanky Panky,Tommy James And The Shondells,complemento,173,Grupo/Outro
+1965-01-23,1960s,Downtown,Petula Clark,complemento,195.553,Feminino
+1963-01-05,1960s,Telstar,The Tornadoes,complemento,194,Grupo/Outro
+1964-02-01,1960s,I Want To Hold Your Hand,The Beatles,complemento,145,Grupo/Outro
+1963-10-12,1960s,Sugar Shack,Jimmy Gilmer And The Fireballs,complemento,119.5,Grupo/Outro
+1964-02-22,1960s,I Want To Hold Your Hand,The Beatles,complemento,145,Grupo/Outro
+1964-10-24,1960s,Do Wah Diddy Diddy,Manfred Mann,complemento,143.7865,Grupo/Outro
+1961-08-07,1960s,Tossin' And Turnin',Bobby Lewis,complemento,147.493,Masculino
+1968-06-22,1960s,This Guy's In Love With You,Herb Alpert,complemento,234.506,Masculino
+1967-10-21,1960s,To Sir With Love,Lulu,complemento,NA,NA
+1968-02-10,1960s,Love Is Blue (L'amour Est Bleu),Paul Mauriat And His Orchestra,complemento,153,NA
+1962-04-21,1960s,Good Luck Charm,Elvis Presley With The Jordanaires,complemento,NA,NA
+1961-10-30,1960s,Runaround Sue,Dion,complemento,160.8265,Feminino
+1964-08-01,1960s,A Hard Day's Night,The Beatles,complemento,154.29950000000002,Grupo/Outro
+1960-01-04,1960s,El Paso,Marty Robbins,complemento,277.4995,Masculino
+1967-05-13,1960s,The Happening,The Supremes,complemento,164.09300000000002,Grupo/Outro
+1961-06-26,1960s,Quarter To Three,U.S. Bonds,complemento,222.5,NA
+1968-12-28,1960s,I Heard It Through The Grapevine,Marvin Gaye,complemento,237.853,Masculino
+1960-01-25,1960s,Running Bear,Johnny Preston,complemento,157.235,NA
+1960-09-05,1960s,It's Now Or Never,Elvis Presley With The Jordanaires,complemento,196,NA
+1965-10-16,1960s,Yesterday,The Beatles,complemento,NA,Grupo/Outro
+1967-11-18,1960s,To Sir With Love,Lulu,complemento,NA,NA
+1960-11-28,1960s,Are You Lonesome To-night?,Elvis Presley With The Jordanaires,complemento,NA,NA
+1966-04-16,1960s,(You're My) Soul And Inspiration,The Righteous Brothers,complemento,195.653,Grupo/Outro
+1963-01-19,1960s,Go Away Little Girl,Steve Lawrence,complemento,132.5,Masculino
+1962-07-14,1960s,Roses Are Red (My Love),Bobby Vinton,complemento,157.8865,Masculino
+1966-02-05,1960s,My Love,Petula Clark,complemento,166.32,Feminino
+1968-06-08,1960s,Mrs. Robinson,Simon & Garfunkel,complemento,229.532,Grupo/Outro
+1967-04-01,1960s,Happy Together,The Turtles,complemento,173.973,Grupo/Outro
+1969-01-04,1960s,I Heard It Through The Grapevine,Marvin Gaye,complemento,237.853,Masculino
+1963-02-09,1960s,Hey Paula,Paul and Paula,complemento,149.733,NA
+1960-07-04,1960s,Everybody's Somebody's Fool,Connie Francis,complemento,159.9665,Feminino
+1962-05-05,1960s,Soldier Boy,The Shirelles,complemento,161,Grupo/Outro
+1968-12-21,1960s,I Heard It Through The Grapevine,Marvin Gaye,complemento,237.853,Masculino
+1969-05-03,1960s,Aquarius/Let The Sunshine In (The Flesh Failures),The 5th Dimension,complemento,289.2865,NA
+1965-04-17,1960s,I'm Telling You Now,Freddie And The Dreamers,complemento,127.273,Grupo/Outro
+1964-04-18,1960s,Can't Buy Me Love,The Beatles,complemento,139.013,Grupo/Outro
+1966-05-21,1960s,"Monday, Monday",The Mamas & The Papas,complemento,202.08,Grupo/Outro
+1964-01-18,1960s,There! I've Said It Again,Bobby Vinton,complemento,142,Masculino
+1968-11-16,1960s,Hey Jude,The Beatles,complemento,424.5,Grupo/Outro
+1977-09-10,1970s,Best Of My Love,The Emotions,piloto,219.353,Grupo/Outro
+1975-07-19,1970s,Listen To What The Man Said,Wings,piloto,NA,NA
+1976-10-30,1970s,If You Leave Me Now,Chicago,piloto,238,Grupo/Outro
+1975-12-20,1970s,That's The Way (I Like It),KC And The Sunshine Band,piloto,192,Grupo/Outro
+1974-05-18,1970s,The Streak,Ray Stevens,piloto,197.733,Masculino
+1977-07-30,1970s,I Just Want To Be Your Everything,Andy Gibb,complemento,204,Masculino
+1972-07-15,1970s,Lean On Me,Bill Withers,complemento,228.266,Masculino
+1973-05-05,1970s,Tie A Yellow Ribbon Round The Ole Oak Tree,Dawn Featuring Tony Orlando,complemento,171,Grupo/Outro
+1978-08-26,1970s,Grease,Frankie Valli,complemento,202.826,Masculino
+1978-07-01,1970s,Shadow Dancing,Andy Gibb,complemento,271.564,Masculino
+1970-01-10,1970s,Raindrops Keep Fallin' On My Head,B.J. Thomas,complemento,183.053,Masculino
+1970-08-29,1970s,War,Edwin Starr,complemento,201,Masculino
+1975-04-26,1970s,(Hey Won't You Play) Another Somebody Done Somebody Wrong Song,B.J. Thomas,complemento,NA,Masculino
+1975-03-29,1970s,Lady Marmalade,Labelle,complemento,NA,Grupo/Outro
+1973-02-03,1970s,Crocodile Rock,Elton John,complemento,237.96,NA
+1976-07-10,1970s,Afternoon Delight,Starland Vocal Band,complemento,211.2865,Grupo/Outro
+1978-05-20,1970s,With A Little Luck,Wings,complemento,308.5,NA
+1978-04-29,1970s,Night Fever,Bee Gees,complemento,216.388,Grupo/Outro
+1970-02-07,1970s,Venus,The Shocking Blue,complemento,NA,NA
+1975-06-14,1970s,Sister Golden Hair,America,complemento,212.6495,NA
+1977-11-12,1970s,You Light Up My Life,Debby Boone,complemento,217.5995,Feminino
+1976-06-19,1970s,Silly Love Songs,Wings,complemento,359.88,NA
+1972-07-08,1970s,Lean On Me,Bill Withers,complemento,228.266,Masculino
+1977-02-26,1970s,New Kid In Town,Eagles,complemento,NA,Grupo/Outro
+1979-08-04,1970s,Bad Girls,Donna Summer,complemento,233.233,NA
+1976-12-25,1970s,Tonight's The Night (Gonna Be Alright),Rod Stewart,complemento,NA,Masculino
+1978-05-06,1970s,Night Fever,Bee Gees,complemento,216.388,Grupo/Outro
+1976-10-02,1970s,Play That Funky Music,Wild Cherry,complemento,206.433,Grupo/Outro
+1972-09-02,1970s,Alone Again (Naturally),Gilbert O'Sullivan,complemento,217.2935,Masculino
+1973-03-03,1970s,Killing Me Softly With His Song,Roberta Flack,complemento,NA,Feminino
+1972-02-12,1970s,Let's Stay Together,Al Green,complemento,283,Masculino
+1974-10-12,1970s,I Honestly Love You,Olivia Newton-John,complemento,244.869,Feminino
+1975-08-30,1970s,Get Down Tonight,KC And The Sunshine Band,complemento,193.8,Grupo/Outro
+1972-09-16,1970s,Black & White,Three Dog Night,complemento,NA,Grupo/Outro
+1973-02-24,1970s,Killing Me Softly With His Song,Roberta Flack,complemento,NA,Feminino
+1973-02-17,1970s,Crocodile Rock,Elton John,complemento,237.96,NA
+1973-04-28,1970s,Tie A Yellow Ribbon Round The Ole Oak Tree,Dawn Featuring Tony Orlando,complemento,171,Grupo/Outro
+1977-05-28,1970s,Sir Duke,Stevie Wonder,complemento,168,Masculino
+1975-02-01,1970s,Laughter In The Rain,Neil Sedaka,complemento,174.346,Masculino
+1972-09-09,1970s,Alone Again (Naturally),Gilbert O'Sullivan,complemento,217.2935,Masculino
+1970-03-28,1970s,Bridge Over Troubled Water,Simon & Garfunkel,complemento,295,Grupo/Outro
+1973-08-11,1970s,The Morning After,Maureen McGovern,complemento,140.333,Feminino
+1971-03-06,1970s,One Bad Apple,The Osmonds,complemento,164.5195,Grupo/Outro
+1977-05-07,1970s,Hotel California,Eagles,complemento,415,Grupo/Outro
+1970-06-06,1970s,Everything Is Beautiful,Ray Stevens,complemento,210.866,Masculino
+1974-08-03,1970s,ANNIE's SONG,John Denver,complemento,191.86,NA
+1976-06-12,1970s,Silly Love Songs,Wings,complemento,359.88,NA
+1979-01-13,1970s,Too Much Heaven,Bee Gees,complemento,126.04599999999999,Grupo/Outro
+1977-04-02,1970s,Rich Girl,Daryl Hall John Oates,complemento,NA,NA
+1977-10-08,1970s,Star Wars Theme/Cantina Band,Meco,complemento,213,Masculino
+1977-12-31,1970s,How Deep Is Your Love,Bee Gees,complemento,247.026,Grupo/Outro
+1976-11-27,1970s,Tonight's The Night (Gonna Be Alright),Rod Stewart,complemento,NA,Masculino
+1979-12-01,1970s,No More Tears (Enough Is Enough),Barbra Streisand/Donna Summer,complemento,NA,NA
+1975-05-17,1970s,He Don't Love You (Like I Love You),Tony Orlando & Dawn,complemento,NA,Grupo/Outro
+1978-10-28,1970s,Hot Child In The City,Nick Gilder,complemento,192.2,Masculino
+1974-06-08,1970s,Band On The Run,Paul McCartney And Wings,complemento,311.909,NA
+1978-12-30,1970s,Le Freak,Chic,complemento,249.9,Grupo/Outro
+1979-03-10,1970s,I Will Survive,Gloria Gaynor,complemento,224.906,Feminino
+1975-07-12,1970s,Love Will Keep Us Together,The Captain & Tennille,complemento,NA,NA
+1978-04-22,1970s,Night Fever,Bee Gees,complemento,216.388,Grupo/Outro
+1978-07-22,1970s,Shadow Dancing,Andy Gibb,complemento,271.564,Masculino
+1977-11-26,1970s,You Light Up My Life,Debby Boone,complemento,217.5995,Feminino
+1978-11-25,1970s,MacArthur Park,Donna Summer,complemento,398.293,NA
+1972-12-09,1970s,I Am Woman,Helen Reddy,complemento,201.893,Feminino
+1974-11-23,1970s,I Can Help,Billy Swan,complemento,236.833,Masculino
+1978-09-16,1970s,Boogie Oogie Oogie,A Taste Of Honey,complemento,215.993,Grupo/Outro
+1971-11-06,1970s,"Gypsys, Tramps & Thieves",Cher,complemento,156,Feminino
+1975-11-15,1970s,Island Girl,Elton John,complemento,225.817,NA
+1971-01-16,1970s,My Sweet Lord/Isn't It A Pity,George Harrison,complemento,NA,Masculino
+1972-01-29,1970s,American Pie (Parts I & II),Don McLean,complemento,NA,NA
+1979-09-15,1970s,My Sharona,The Knack,complemento,287,NA
+1975-02-22,1970s,Pick Up The Pieces,AWB,complemento,422,Masculino
+1973-10-27,1970s,Midnight Train To Georgia,Gladys Knight And The Pips,complemento,279.266,Grupo/Outro
+1977-11-19,1970s,You Light Up My Life,Debby Boone,complemento,217.5995,Feminino
+1977-04-09,1970s,Dancing Queen,ABBA,complemento,223,Grupo/Outro
+1971-02-13,1970s,One Bad Apple,The Osmonds,complemento,164.5195,Grupo/Outro
+1971-07-24,1970s,Indian Reservation (The Lament Of The Cherokee Reservation Indian),The Raiders,complemento,173,Grupo/Outro
+1970-04-25,1970s,ABC,Jackson 5,complemento,179,NA
+1972-11-18,1970s,I Can See Clearly Now,Johnny Nash,complemento,170.951,Masculino
+1972-04-15,1970s,The First Time Ever I Saw Your Face,Roberta Flack,complemento,NA,Feminino
+1979-05-05,1970s,Reunited,Peaches & Herb,complemento,345.113,Grupo/Outro
+1978-12-09,1970s,Le Freak,Chic,complemento,249.9,Grupo/Outro
+1980-08-30,1980s,Sailing,Christopher Cross,piloto,259.666,Masculino
+1984-12-15,1980s,Out Of Touch,Daryl Hall John Oates,piloto,338.5,NA
+1989-04-01,1980s,Eternal Flame,The Bangles,piloto,217.8285,NA
+1986-01-25,1980s,That's What Friends Are For,Dionne & Friends,piloto,NA,Grupo/Outro
+1983-04-23,1980s,Come On Eileen,Dexys Midnight Runners,piloto,224.253,Grupo/Outro
+1982-08-07,1980s,Eye Of The Tiger,Survivor,complemento,227.8265,NA
+1985-11-30,1980s,Separate Lives,Phil Collins and Marilyn Martin,complemento,248,NA
+1988-09-10,1980s,Sweet Child O' Mine,Guns N' Roses,complemento,380.04650000000004,NA
+1980-10-18,1980s,Another One Bites The Dust,Queen,complemento,252,Grupo/Outro
+1986-01-04,1980s,"Say You, Say Me",Lionel Richie,complemento,243.36,Masculino
+1982-07-10,1980s,Don't You Want Me,The Human League,complemento,222.9265,Grupo/Outro
+1982-10-09,1980s,Jack & Diane,John Cougar,complemento,264.05949999999996,Grupo/Outro
+1984-04-14,1980s,Footloose,Kenny Loggins,complemento,218,Masculino
+1985-08-17,1980s,Shout,Tears For Fears,complemento,336.74649999999997,Grupo/Outro
+1984-02-04,1980s,Karma Chameleon,Culture Club,complemento,239,NA
+1989-03-04,1980s,Lost In Your Eyes,Debbie Gibson,complemento,213.6995,NA
+1984-04-28,1980s,Against All Odds (Take A Look At Me Now),Phil Collins,complemento,205,NA
+1987-12-19,1980s,Faith,George Michael,complemento,198,Masculino
+1983-11-05,1980s,Islands In The Stream,Kenny Rogers Duet With Dolly Parton,complemento,249,NA
+1985-08-24,1980s,The Power Of Love,Huey Lewis & The News,complemento,258.5,Grupo/Outro
+1988-08-27,1980s,Monkey,George Michael,complemento,291,Masculino
+1986-11-15,1980s,Amanda,Boston,complemento,256.3995,Grupo/Outro
+1983-10-08,1980s,Total Eclipse Of The Heart,Bonnie Tyler,complemento,276.22,Feminino
+1987-08-15,1980s,I Still Haven't Found What I'm Looking For,U2,complemento,311,Grupo/Outro
+1981-01-24,1980s,(Just Like) Starting Over,John Lennon,complemento,261.5,Masculino
+1985-12-21,1980s,"Say You, Say Me",Lionel Richie,complemento,243.36,Masculino
+1987-08-22,1980s,Who's That Girl,Madonna,complemento,238.773,Feminino
+1987-10-24,1980s,Bad,Michael Jackson,complemento,256.3065,Masculino
+1988-12-10,1980s,Look Away,Chicago,complemento,241.773,Grupo/Outro
+1983-12-17,1980s,Say Say Say,Paul McCartney And Michael Jackson,complemento,237,NA
+1984-08-04,1980s,When Doves Cry,Prince,complemento,163.753,Masculino
+1987-09-12,1980s,La Bamba,Los Lobos,complemento,174.1395,Grupo/Outro
+1987-09-19,1980s,I Just Can't Stop Loving You,Michael Jackson With Siedah Garrett,complemento,257,NA
+1984-11-03,1980s,Caribbean Queen (No More Love On The Run),Billy Ocean,complemento,249,Masculino
+1984-07-28,1980s,When Doves Cry,Prince,complemento,163.753,Masculino
+1984-01-07,1980s,Say Say Say,Paul McCartney And Michael Jackson,complemento,237,NA
+1984-07-07,1980s,When Doves Cry,Prince,complemento,163.753,Masculino
+1982-01-30,1980s,I Can't Go For That (No Can Do),Daryl Hall John Oates,complemento,235,NA
+1981-08-01,1980s,Jessie's Girl,Rick Springfield,complemento,194.07999999999998,Masculino
+1985-06-08,1980s,Everybody Wants To Rule The World,Tears For Fears,complemento,255.7105,Grupo/Outro
+1986-07-26,1980s,Sledgehammer,Peter Gabriel,complemento,352.21299999999997,NA
+1984-10-20,1980s,I Just Called To Say I Love You,Stevie Wonder,complemento,264.613,Masculino
+1983-04-09,1980s,Billie Jean,Michael Jackson,complemento,252.613,Masculino
+1982-05-15,1980s,Ebony And Ivory,Paul McCartney And Stevie Wonder,complemento,222.51299999999998,NA
+1987-10-10,1980s,Here I Go Again,Whitesnake,complemento,306,Grupo/Outro
+1986-10-11,1980s,When I Think Of You,Janet Jackson,complemento,236.0855,Feminino
+1986-10-04,1980s,Stuck With You,Huey Lewis & The News,complemento,266.291,Grupo/Outro
+1981-07-18,1980s,Bette Davis Eyes,Kim Carnes,complemento,224.5,Feminino
+1989-07-01,1980s,Baby Don't Forget My Number,Milli Vanilli,complemento,248.533,Grupo/Outro
+1985-06-29,1980s,Heaven,Bryan Adams,complemento,249.2,Masculino
+1985-03-30,1980s,One More Night,Phil Collins,complemento,338.433,NA
+1989-12-23,1980s,Another Day In Paradise,Phil Collins,complemento,311.56,NA
+1983-07-02,1980s,Flashdance...What A Feeling,Irene Cara,complemento,229.8465,NA
+1988-05-21,1980s,Anything For You,Gloria Estefan & Miami Sound Machine,complemento,223.5865,NA
+1985-09-28,1980s,Money For Nothing,Dire Straits,complemento,NA,Grupo/Outro
+1984-05-26,1980s,Let's Hear It For The Boy,Deniece Williams,complemento,257.9,Feminino
+1983-10-01,1980s,Total Eclipse Of The Heart,Bonnie Tyler,complemento,276.22,Feminino
+1989-09-02,1980s,Cold Hearted,Paula Abdul,complemento,223.6465,Feminino
+1982-04-03,1980s,I Love Rock 'N Roll,Joan Jett & the Blackhearts,complemento,214,Grupo/Outro
+1984-05-05,1980s,Against All Odds (Take A Look At Me Now),Phil Collins,complemento,205,NA
+1981-12-19,1980s,Physical,Olivia Newton-John,complemento,224.5,Feminino
+1986-05-17,1980s,Greatest Love Of All,Whitney Houston,complemento,287.33349999999996,Feminino
+1980-04-12,1980s,Another Brick In The Wall (Part II),Pink Floyd,complemento,262.5,NA
+1986-04-26,1980s,Kiss,Prince And The Revolution,complemento,254,NA
+1982-08-14,1980s,Eye Of The Tiger,Survivor,complemento,227.8265,NA
+1983-05-07,1980s,Beat It,Michael Jackson,complemento,302.6,Masculino
+1986-12-27,1980s,Walk Like An Egyptian,The Bangles,complemento,188.13299999999998,NA
+1982-11-13,1980s,Up Where We Belong,Joe Cocker And Jennifer Warnes,complemento,247.833,NA
+1980-05-17,1980s,Call Me,Blondie,complemento,295,NA
+1989-01-21,1980s,Two Hearts,Phil Collins,complemento,194.8,NA
+1986-11-01,1980s,True Colors,Cyndi Lauper,complemento,226.5,Feminino
+1986-07-12,1980s,Holding Back The Years,Simply Red,complemento,264.7865,Grupo/Outro
+1989-12-30,1980s,Another Day In Paradise,Phil Collins,complemento,311.56,NA
+1987-04-18,1980s,I Knew You Were Waiting (For Me),Aretha Franklin & George Michael,complemento,321.5,NA
+1986-09-13,1980s,"Take My Breath Away (Love Theme From ""Top Gun"")",Berlin,complemento,NA,Grupo/Outro
+1984-11-10,1980s,Caribbean Queen (No More Love On The Run),Billy Ocean,complemento,249,Masculino
+1988-12-24,1980s,Every Rose Has Its Thorn,Poison,complemento,274.79949999999997,Grupo/Outro
+1980-01-12,1980s,Escape (The Pina Colada Song),Rupert Holmes,complemento,252.626,Masculino
+1982-09-11,1980s,Hard To Say I'm Sorry,Chicago,complemento,219.813,Grupo/Outro
+1989-05-27,1980s,Forever Your Girl,Paula Abdul,complemento,270.38,Feminino
+1985-07-20,1980s,A View To A Kill,Duran Duran,complemento,251.5,NA
+1986-06-28,1980s,On My Own,Patti LaBelle & Michael McDonald,complemento,289.466,NA
+1981-05-23,1980s,Bette Davis Eyes,Kim Carnes,complemento,224.5,Feminino
+1982-11-06,1980s,Up Where We Belong,Joe Cocker And Jennifer Warnes,complemento,247.833,NA
+1987-03-28,1980s,Lean On Me,Club Nouveau,complemento,241.214,NA
+1982-07-17,1980s,Don't You Want Me,The Human League,complemento,222.9265,Grupo/Outro
+1985-05-25,1980s,Everything She Wants,Wham!,complemento,366.883,Grupo/Outro
+1985-08-31,1980s,The Power Of Love,Huey Lewis & The News,complemento,258.5,Grupo/Outro
+1980-02-09,1980s,Rock With You,Michael Jackson,complemento,205,Masculino
+1987-02-14,1980s,Livin' On A Prayer,Bon Jovi,complemento,349.03999999999996,Grupo/Outro
+1988-07-30,1980s,Roll With It,Steve Winwood,complemento,NA,Masculino
+1980-07-19,1980s,It's Still Rock And Roll To Me,Billy Joel,complemento,237.19299999999998,Masculino
+1986-08-09,1980s,"Glory Of Love (Theme From ""The Karate Kid Part II"")",Peter Cetera,complemento,258.553,Masculino
+1983-02-12,1980s,Down Under,Men At Work,complemento,219.04,Grupo/Outro
+1980-11-01,1980s,Woman In Love,Barbra Streisand,complemento,231.396,Feminino
+1989-07-29,1980s,Toy Soldiers,Martika,complemento,253.255,Feminino
+1988-12-31,1980s,Every Rose Has Its Thorn,Poison,complemento,274.79949999999997,Grupo/Outro
+1994-10-29,1990s,I'll Make Love to You,Boyz II Men,piloto,237.653,Grupo/Outro
+1994-03-26,1990s,The Sign,Ace of Base,piloto,190.15300000000002,Grupo/Outro
+1998-07-11,1990s,The Boy Is Mine,Brandy and Monica,piloto,240.039,Grupo/Outro
+1994-07-09,1990s,I Swear,All-4-One,piloto,278.353,Grupo/Outro
+1992-07-18,1990s,Baby Got Back,Sir Mix-a-Lot,piloto,262.72,Masculino
+1998-12-05,1990s,I'm Your Angel,R. Kelly and Céline Dion,complemento,NA,NA
+1993-11-27,1990s,I'd Do Anything for Love (But I Won't Do That),Meat Loaf,complemento,323.2865,Masculino
+1990-05-26,1990s,Vogue,Madonna,complemento,319.4,Feminino
+1990-03-17,1990s,Escapade,Janet Jackson,complemento,284.5,Feminino
+1992-03-14,1990s,To Be with You,Mr. Big,complemento,246.913,Grupo/Outro
+1994-08-13,1990s,Stay (I Missed You),Lisa Loeb & Nine Stories,complemento,183.38,NA
+1990-03-10,1990s,Escapade,Janet Jackson,complemento,284.5,Feminino
+1992-04-25,1990s,Jump,Kris Kross,complemento,194.56650000000002,Grupo/Outro
+1990-08-11,1990s,Vision Of Love,Mariah Carey,complemento,213.4795,Feminino
+1998-05-02,1990s,Too Close,Next,complemento,243.853,Grupo/Outro
+1990-09-08,1990s,"Blaze Of Glory (From ""Young Guns II"")",Jon Bon Jovi,complemento,334.28,Masculino
+1993-11-13,1990s,I'd Do Anything for Love (But I Won't Do That),Meat Loaf,complemento,323.2865,Masculino
+1999-06-26,1990s,If You Had My Love,Jennifer Lopez,complemento,NA,Feminino
+1996-11-16,1990s,No Diggity,Blackstreet featuring Dr. Dre,complemento,255,Grupo/Outro
+1996-04-06,1990s,Because You Loved Me,Céline Dion,complemento,273.5,Feminino
+1994-02-12,1990s,The Power of Love,Céline Dion,complemento,278.48,Feminino
+1991-11-02,1990s,Romantic,Karyn White,complemento,244,Feminino
+1993-03-13,1990s,Informer,Snow,complemento,258.5,Masculino
+1994-12-17,1990s,Here Comes the Hotstepper,Ini Kamoze,complemento,245.04649999999998,Masculino
+1996-05-25,1990s,Tha Crossroads,Bone Thugs-n-Harmony,complemento,223.4665,Grupo/Outro
+1997-11-15,1990s,"Candle in the Wind 1997 "" / "" Something About the Way You Look Tonight",Elton John,complemento,NA,NA
+1997-03-29,1990s,Can't Nobody Hold Me Down,Puff Daddy featuring Mase,complemento,NA,Grupo/Outro
+1995-03-18,1990s,Take a Bow,Madonna,complemento,NA,Feminino
+1998-09-26,1990s,I Don't Want to Miss a Thing,Aerosmith,complemento,275,NA
+1991-03-23,1990s,One More Try,Timmy T,complemento,209.833,Masculino
+1999-10-30,1990s,Smooth,Santana featuring Rob Thomas,complemento,295.413,Grupo/Outro
+1998-10-24,1990s,The First Night,Monica,complemento,223.64,Feminino
+1994-09-24,1990s,I'll Make Love to You,Boyz II Men,complemento,237.653,Grupo/Outro
+1998-02-21,1990s,Nice & Slow,Usher,complemento,228,Masculino
+1999-08-21,1990s,Genie in a Bottle,Christina Aguilera,complemento,217.199,Feminino
+1998-08-29,1990s,The Boy Is Mine,Brandy and Monica,complemento,240.039,Grupo/Outro
+1995-05-20,1990s,This Is How We Do It,Montell Jordan,complemento,206.5,Masculino
+1999-11-27,1990s,Smooth,Santana featuring Rob Thomas,complemento,295.413,Grupo/Outro
+1994-01-29,1990s,All for Love,Bryan Adams / Rod Stewart / Sting,complemento,NA,NA
+1998-08-01,1990s,The Boy Is Mine,Brandy and Monica,complemento,240.039,Grupo/Outro
+1998-05-23,1990s,My All,Mariah Carey,complemento,251.133,Feminino
+1995-09-09,1990s,Gangsta's Paradise,Coolio featuring L.V.,complemento,240.83300000000003,Masculino
+1993-08-21,1990s,Can't Help Falling in Love,UB40,complemento,208,Grupo/Outro
+1996-04-13,1990s,Because You Loved Me,Céline Dion,complemento,273.5,Feminino
+1999-05-15,1990s,Livin' la Vida Loca,Ricky Martin,complemento,242.386,Masculino
+1991-04-06,1990s,Coming Out of the Dark,Gloria Estefan,complemento,244.82,Feminino
+1991-01-26,1990s,The First Time,Surface,complemento,256.253,Grupo/Outro
+1990-01-20,1990s,How Am I Supposed To Live Without You,Michael Bolton,complemento,255.56,Masculino
+1992-10-10,1990s,End of the Road,Boyz II Men,complemento,349.5485,Grupo/Outro
+1997-01-18,1990s,Un-Break My Heart,Toni Braxton,complemento,260.0195,Feminino
+1997-05-31,1990s,MMMBop,Hanson,complemento,239.626,Grupo/Outro
+1992-04-18,1990s,Save the Best for Last,Vanessa Williams,complemento,220,Feminino
+1995-12-02,1990s,One Sweet Day,Mariah Carey and Boyz II Men,complemento,286.89250000000004,NA
+1999-05-29,1990s,Livin' la Vida Loca,Ricky Martin,complemento,242.386,Masculino
+1995-04-01,1990s,Take a Bow,Madonna,complemento,NA,Feminino
+1990-06-09,1990s,Hold On,Wilson Phillips,complemento,253.92000000000002,NA
+1993-02-06,1990s,I Will Always Love You,Whitney Houston,complemento,271.093,Feminino
+1994-09-03,1990s,I'll Make Love to You,Boyz II Men,complemento,237.653,Grupo/Outro
+1990-10-06,1990s,Close To You,Maxi Priest,complemento,264.268,Masculino
+1995-11-18,1990s,Fantasy,Mariah Carey,complemento,268.699,Feminino
+1997-01-04,1990s,Un-Break My Heart,Toni Braxton,complemento,260.0195,Feminino
+1996-03-16,1990s,One Sweet Day,Mariah Carey and Boyz II Men,complemento,286.89250000000004,NA
+1997-06-21,1990s,I'll Be Missing You,Puff Daddy and Faith Evans featuring 112,complemento,275.4665,NA
+1993-12-11,1990s,Again,Janet Jackson,complemento,258.5,Feminino
+1998-07-18,1990s,The Boy Is Mine,Brandy and Monica,complemento,240.039,Grupo/Outro
+1995-07-01,1990s,Have You Ever Really Loved a Woman?,Bryan Adams,complemento,292.35450000000003,Masculino
+1990-02-10,1990s,Opposites Attract,Paula Abdul (Duet With The Wild Pair),complemento,226,NA
+1996-10-12,1990s,"Macarena"" (Bayside Boys Mix)",Los del Río,complemento,219.738,Grupo/Outro
+1992-01-11,1990s,Black or White,Michael Jackson,complemento,277.08000000000004,Masculino
+1993-05-22,1990s,That's the Way Love Goes,Janet Jackson,complemento,266.673,Feminino
+1993-03-06,1990s,A Whole New World,Peabo Bryson and Regina Belle,complemento,NA,NA
+1996-07-06,1990s,Tha Crossroads,Bone Thugs-n-Harmony,complemento,223.4665,Grupo/Outro
+1995-04-08,1990s,Take a Bow,Madonna,complemento,NA,Feminino
+1997-08-30,1990s,Mo Money Mo Problems,The Notorious B.I.G. featuring Puff Daddy and Mase,complemento,248,Masculino
+1995-10-21,1990s,Fantasy,Mariah Carey,complemento,268.699,Feminino
+1995-07-22,1990s,Waterfalls,TLC,complemento,244.7795,NA
+1996-09-28,1990s,"Macarena"" (Bayside Boys Mix)",Los del Río,complemento,219.738,Grupo/Outro
+1994-08-20,1990s,Stay (I Missed You),Lisa Loeb & Nine Stories,complemento,183.38,NA
+1996-08-31,1990s,"Macarena"" (Bayside Boys Mix)",Los del Río,complemento,219.738,Grupo/Outro
+1996-03-30,1990s,Because You Loved Me,Céline Dion,complemento,273.5,Feminino
+1994-04-09,1990s,Bump n' Grind,R. Kelly,complemento,255.7265,Masculino
+1998-02-07,1990s,Together Again,Janet Jackson,complemento,259.04650000000004,Feminino
+2003-11-01,2000s,Baby Boy,Beyoncé featuring Sean Paul,piloto,253.7535,Feminino
+2009-06-06,2000s,Boom Boom Pow,The Black Eyed Peas,piloto,219,Grupo/Outro
+2006-06-17,2000s,Hips Don't Lie,Shakira featuring Wyclef Jean,piloto,382.88,Feminino
+2009-06-27,2000s,Boom Boom Pow,The Black Eyed Peas,piloto,219,Grupo/Outro
+2007-11-10,2000s,Kiss Kiss,Chris Brown featuring T-Pain,piloto,284,Masculino
+2009-03-07,2000s,Right Round,Flo Rida,complemento,205,Masculino
+2005-03-26,2000s,Candy Shop,50 Cent featuring Olivia,complemento,205.8665,Masculino
+2003-05-03,2000s,In da Club,50 Cent,complemento,NA,Masculino
+2007-07-28,2000s,Hey There Delilah,Plain White T's,complemento,233.0595,Grupo/Outro
+2001-11-10,2000s,Family Affair,Mary J. Blige,complemento,227.546,NA
+2000-02-12,2000s,I Knew I Loved You,Savage Garden,complemento,240.5,NA
+2003-06-14,2000s,21 Questions,50 Cent featuring Nate Dogg,complemento,198.62,Masculino
+2001-12-15,2000s,U Got It Bad,Usher,complemento,239.0265,Masculino
+2002-05-18,2000s,Foolish,Ashanti,complemento,NA,Feminino
+2007-01-20,2000s,Irreplaceable,Beyoncé,complemento,252,Feminino
+2008-05-10,2000s,Bleeding Love,Leona Lewis,complemento,263,Feminino
+2003-07-12,2000s,Crazy in Love,Beyoncé featuring Jay-Z,complemento,251,Feminino
+2008-10-25,2000s,Womanizer,Britney Spears,complemento,224.4,Feminino
+2003-02-15,2000s,All I Have,Jennifer Lopez featuring LL Cool J,complemento,255,Feminino
+2006-10-28,2000s,Money Maker,Ludacris featuring Pharrell,complemento,230,Masculino
+2001-11-03,2000s,Family Affair,Mary J. Blige,complemento,227.546,NA
+2003-11-15,2000s,Baby Boy,Beyoncé featuring Sean Paul,complemento,253.7535,Feminino
+2002-03-23,2000s,Ain't It Funny (Murder Remix),Jennifer Lopez featuring Ja Rule,complemento,234.64,Feminino
+2005-01-22,2000s,Let Me Love You,Mario,complemento,252.24,Masculino
+2004-07-03,2000s,Burn,Usher,complemento,232,Masculino
+2009-04-11,2000s,Poker Face,Lady Gaga,complemento,NA,Feminino
+2009-03-14,2000s,Right Round,Flo Rida,complemento,205,Masculino
+2003-03-22,2000s,In da Club,50 Cent,complemento,NA,Masculino
+2001-03-31,2000s,Angel,Shaggy featuring Rayvon,complemento,236,Masculino
+2008-05-24,2000s,Take a Bow,Rihanna,complemento,232,Feminino
+2008-07-26,2000s,I Kissed a Girl,Katy Perry,complemento,211.786,Feminino
+2007-07-21,2000s,Umbrella,Rihanna featuring Jay-Z,complemento,252.51999999999998,Feminino
+2006-02-25,2000s,Check on It,Beyoncé featuring Slim Thug,complemento,285.7065,Feminino
+2002-12-21,2000s,Lose Yourself,Eminem,complemento,323.5,Masculino
+2002-08-10,2000s,Hot in Herre,Nelly,complemento,228,Masculino
+2003-05-24,2000s,Get Busy,Sean Paul,complemento,NA,Masculino
+2009-11-21,2000s,Fireflies,Owl City,complemento,217,Masculino
+2009-12-05,2000s,Empire State of Mind,Jay-Z and Alicia Keys,complemento,276.9135,NA
+2007-06-30,2000s,Umbrella,Rihanna featuring Jay-Z,complemento,252.51999999999998,Feminino
+2002-09-21,2000s,Dilemma,Nelly featuring Kelly Rowland,complemento,289.204,Masculino
+2000-04-22,2000s,Maria Maria,Santana featuring The Product G&B,complemento,259,Grupo/Outro
+2000-04-01,2000s,Say My Name,Destiny's Child,complemento,241.82,Grupo/Outro
+2003-10-18,2000s,Baby Boy,Beyoncé featuring Sean Paul,complemento,253.7535,Feminino
+2003-08-16,2000s,Crazy in Love,Beyoncé featuring Jay-Z,complemento,251,Feminino
+2009-09-26,2000s,I Gotta Feeling,The Black Eyed Peas,complemento,246.19299999999998,Grupo/Outro
+2004-04-03,2000s,Yeah!,Usher featuring Lil Jon and Ludacris,complemento,250.373,NA
+2007-10-27,2000s,Crank That (Soulja Boy),Soulja Boy Tell 'Em,complemento,223.393,NA
+2001-09-15,2000s,I'm Real (Murder Remix),Jennifer Lopez featuring Ja Rule,complemento,NA,Feminino
+2002-12-07,2000s,Lose Yourself,Eminem,complemento,323.5,Masculino
+2005-02-19,2000s,Let Me Love You,Mario,complemento,252.24,Masculino
+2004-11-06,2000s,My Boo,Usher and Alicia Keys,complemento,223,NA
+2001-06-16,2000s,Lady Marmalade,"Christina Aguilera , Lil' Kim , Mýa and Pink",complemento,NA,NA
+2003-09-20,2000s,Shake Ya Tailfeather,"Nelly , P. Diddy and Murphy Lee",complemento,NA,NA
+2008-09-06,2000s,Whatever You Like,T.I.,complemento,NA,Masculino
+2008-12-27,2000s,Single Ladies (Put a Ring on It),Beyoncé,complemento,NA,Feminino
+2005-07-02,2000s,Inside Your Heaven,Carrie Underwood,complemento,227.4065,NA
+2004-07-24,2000s,Confessions Part II,Usher,complemento,211.2,Masculino
+2004-06-26,2000s,Burn,Usher,complemento,232,Masculino
+2008-09-20,2000s,Whatever You Like,T.I.,complemento,NA,Masculino
+2005-02-05,2000s,Let Me Love You,Mario,complemento,252.24,Masculino
+2004-02-21,2000s,Slow Jamz,Twista featuring Kanye West and Jamie Foxx,complemento,214,Masculino
+2009-05-16,2000s,Boom Boom Pow,The Black Eyed Peas,complemento,219,Grupo/Outro
+2009-03-28,2000s,Right Round,Flo Rida,complemento,205,Masculino
+2006-07-29,2000s,Promiscuous,Nelly Furtado featuring Timbaland,complemento,242.8065,Feminino
+2004-12-11,2000s,Drop It Like It's Hot,Snoop Dogg featuring Pharrell,complemento,270,Masculino
+2007-02-24,2000s,Say It Right,Nelly Furtado,complemento,223.16,Feminino
+2007-08-11,2000s,Beautiful Girls,Sean Kingston,complemento,243,Masculino
+2001-04-07,2000s,Butterfly,Crazy Town,complemento,216.053,Grupo/Outro
+2004-06-05,2000s,Burn,Usher,complemento,232,Masculino
+2002-07-13,2000s,Hot in Herre,Nelly,complemento,228,Masculino
+2007-08-25,2000s,Beautiful Girls,Sean Kingston,complemento,243,Masculino
+2009-07-04,2000s,Boom Boom Pow,The Black Eyed Peas,complemento,219,Grupo/Outro
+2009-08-29,2000s,I Gotta Feeling,The Black Eyed Peas,complemento,246.19299999999998,Grupo/Outro
+2001-03-10,2000s,Stutter,Joe featuring Mystikal,complemento,231.54000000000002,Masculino
+2005-08-06,2000s,We Belong Together,Mariah Carey,complemento,201.6135,Feminino
+2000-03-18,2000s,Say My Name,Destiny's Child,complemento,241.82,Grupo/Outro
+2000-06-10,2000s,Maria Maria,Santana featuring The Product G&B,complemento,259,Grupo/Outro
+2002-06-15,2000s,Foolish,Ashanti,complemento,NA,Feminino
+2007-01-13,2000s,Irreplaceable,Beyoncé,complemento,252,Feminino
+2009-01-17,2000s,Just Dance,Lady Gaga featuring Colby O'Donis,complemento,244,Feminino
+2005-12-03,2000s,Run It!,Chris Brown,complemento,NA,Masculino
+2006-02-04,2000s,Check on It,Beyoncé featuring Slim Thug,complemento,285.7065,Feminino
+2004-05-29,2000s,Burn,Usher,complemento,232,Masculino
+2001-11-17,2000s,Family Affair,Mary J. Blige,complemento,227.546,NA
+2003-10-25,2000s,Baby Boy,Beyoncé featuring Sean Paul,complemento,253.7535,Feminino
+2001-09-01,2000s,Fallin',Alicia Keys,complemento,275.906,Feminino
+2000-12-16,2000s,Independent Women,Destiny's Child,complemento,220,Grupo/Outro
+2004-12-04,2000s,My Boo,Usher and Alicia Keys,complemento,223,NA
+2000-11-18,2000s,Independent Women,Destiny's Child,complemento,220,Grupo/Outro
+2005-07-09,2000s,We Belong Together,Mariah Carey,complemento,201.6135,Feminino
+2007-04-07,2000s,Don't Matter,Akon,complemento,293,Masculino
+2005-02-26,2000s,Let Me Love You,Mario,complemento,252.24,Masculino
+2007-03-31,2000s,Glamorous,Fergie featuring Ludacris,complemento,NA,Feminino
+2007-06-02,2000s,Makes Me Wonder,Maroon 5,complemento,212.61950000000002,Grupo/Outro
+2000-08-05,2000s,It's Gonna Be Me,NSYNC,complemento,198.2465,Grupo/Outro
+2002-04-20,2000s,Foolish,Ashanti,complemento,NA,Feminino
+2008-03-22,2000s,Love in This Club,Usher featuring Young Jeezy,complemento,233.746,Masculino
+2000-07-01,2000s,Be with You,Enrique Iglesias,complemento,NA,NA
+2001-07-07,2000s,U Remind Me,Usher,complemento,267.9955,Masculino
+2008-05-17,2000s,Bleeding Love,Leona Lewis,complemento,263,Feminino
+2002-06-22,2000s,Foolish,Ashanti,complemento,NA,Feminino
+2008-03-15,2000s,Love in This Club,Usher featuring Young Jeezy,complemento,233.746,Masculino
+2003-04-26,2000s,In da Club,50 Cent,complemento,NA,Masculino
+2007-03-03,2000s,What Goes Around...Comes Around,Justin Timberlake,complemento,NA,Masculino
+2008-01-12,2000s,Low,Flo Rida featuring T-Pain,complemento,231.5,Masculino
+2005-04-30,2000s,Candy Shop,50 Cent featuring Olivia,complemento,205.8665,Masculino
+2009-03-21,2000s,Right Round,Flo Rida,complemento,205,Masculino
+2005-09-24,2000s,Gold Digger,Kanye West featuring Jamie Foxx,complemento,209,Grupo/Outro
+2002-01-05,2000s,How You Remind Me,Nickelback,complemento,230.5,Grupo/Outro
+2004-10-09,2000s,Goodies,Ciara featuring Petey Pablo,complemento,214.2465,Feminino
+2006-12-02,2000s,I Wanna Love You,Akon featuring Snoop Dogg,complemento,236,Masculino
+2009-09-19,2000s,I Gotta Feeling,The Black Eyed Peas,complemento,246.19299999999998,Grupo/Outro
+2004-11-13,2000s,My Boo,Usher and Alicia Keys,complemento,223,NA
+2005-09-17,2000s,Gold Digger,Kanye West featuring Jamie Foxx,complemento,209,Grupo/Outro
+2001-09-29,2000s,Fallin',Alicia Keys,complemento,275.906,Feminino
+2009-01-03,2000s,Single Ladies (Put a Ring on It),Beyoncé,complemento,NA,Feminino
+2009-02-07,2000s,My Life Would Suck Without You,Kelly Clarkson,complemento,212.733,Feminino
+2008-12-13,2000s,Single Ladies (Put a Ring on It),Beyoncé,complemento,NA,Feminino
+2002-05-11,2000s,Foolish,Ashanti,complemento,NA,Feminino
+2000-07-22,2000s,Bent,Matchbox Twenty,complemento,NA,Grupo/Outro
+2005-10-22,2000s,Gold Digger,Kanye West featuring Jamie Foxx,complemento,209,Grupo/Outro
+2007-01-27,2000s,Irreplaceable,Beyoncé,complemento,252,Feminino
+2001-10-13,2000s,Fallin',Alicia Keys,complemento,275.906,Feminino
+2005-03-12,2000s,Candy Shop,50 Cent featuring Olivia,complemento,205.8665,Masculino
+2006-08-12,2000s,Promiscuous,Nelly Furtado featuring Timbaland,complemento,242.8065,Feminino
+2005-04-02,2000s,Candy Shop,50 Cent featuring Olivia,complemento,205.8665,Masculino
+2002-11-02,2000s,Dilemma,Nelly featuring Kelly Rowland,complemento,289.204,Masculino
+2002-08-03,2000s,Hot in Herre,Nelly,complemento,228,Masculino
+2005-01-29,2000s,Let Me Love You,Mario,complemento,252.24,Masculino
+2000-07-15,2000s,Everything You Want,Vertical Horizon,complemento,247.4195,Grupo/Outro
+2002-04-27,2000s,Foolish,Ashanti,complemento,NA,Feminino
+2000-12-09,2000s,Independent Women,Destiny's Child,complemento,220,Grupo/Outro
+2015-11-07,2010s,The Hills,The Weeknd,piloto,238.5,Masculino
+2011-12-03,2010s,We Found Love,Rihanna featuring Calvin Harris,piloto,212.573,Feminino
+2016-03-19,2010s,Work,Rihanna featuring Drake,piloto,219.339,Feminino
+2014-06-28,2010s,Fancy,Iggy Azalea featuring Charli XCX,piloto,198.36,Feminino
+2012-12-29,2010s,Locked Out of Heaven,Bruno Mars,piloto,217.974,Masculino
+2010-09-18,2010s,Teenage Dream,Katy Perry,complemento,229,Feminino
+2013-08-24,2010s,Blurred Lines,Robin Thicke featuring T.I. and Pharrell,complemento,226.0755,NA
+2013-04-20,2010s,When I Was Your Man,Bruno Mars,complemento,213.826,Masculino
+2015-04-18,2010s,Uptown Funk,Mark Ronson featuring Bruno Mars,complemento,NA,Masculino
+2011-01-22,2010s,Grenade,Bruno Mars,complemento,220.607,Masculino
+2016-08-13,2010s,Cheap Thrills,Sia featuring Sean Paul,complemento,211,Feminino
+2012-09-29,2010s,One More Night,Maroon 5,complemento,220.273,Grupo/Outro
+2016-02-06,2010s,Sorry,Justin Bieber,complemento,NA,Masculino
+2013-01-26,2010s,Locked Out of Heaven,Bruno Mars,complemento,217.974,Masculino
+2019-01-12,2010s,Without Me,Halsey,complemento,201.31650000000002,Feminino
+2015-12-05,2010s,Hello,Adele,complemento,358.153,Feminino
+2012-05-05,2010s,Somebody That I Used to Know,Gotye featuring Kimbra,complemento,247,Masculino
+2012-09-08,2010s,We Are Never Ever Getting Back Together,Taylor Swift,complemento,197.5,Feminino
+2012-08-25,2010s,Whistle,Flo Rida,complemento,225,Masculino
+2016-04-02,2010s,Work,Rihanna featuring Drake,complemento,219.339,Feminino
+2019-05-25,2010s,Old Town Road,Lil Nas X featuring Billy Ray Cyrus,complemento,201.882,Masculino
+2014-07-26,2010s,Rude,Magic!,complemento,219.44,Grupo/Outro
+2015-06-06,2010s,Bad Blood,Taylor Swift featuring Kendrick Lamar,complemento,199.773,Feminino
+2016-09-17,2010s,Closer,The Chainsmokers featuring Halsey,complemento,221.599,NA
+2017-10-07,2010s,Bodak Yellow,Cardi B,complemento,220,NA
+2012-04-28,2010s,Somebody That I Used to Know,Gotye featuring Kimbra,complemento,247,Masculino
+2016-03-12,2010s,Work,Rihanna featuring Drake,complemento,219.339,Feminino
+2012-03-24,2010s,We Are Young,Fun featuring Janelle Monáe,complemento,250.626,Grupo/Outro
+2018-01-20,2010s,Perfect,Ed Sheeran,complemento,261.59299999999996,Masculino
+2019-08-31,2010s,Señorita,Shawn Mendes and Camila Cabello,complemento,191.007,NA
+2014-09-27,2010s,All About That Bass,Meghan Trainor,complemento,188,Feminino
+2016-11-12,2010s,Closer,The Chainsmokers featuring Halsey,complemento,221.599,NA
+2010-02-20,2010s,Tik Tok,Kesha,complemento,201.32,Feminino
+2014-08-09,2010s,Rude,Magic!,complemento,219.44,Grupo/Outro
+2013-07-06,2010s,Blurred Lines,Robin Thicke featuring T.I. and Pharrell,complemento,226.0755,NA
+2010-03-06,2010s,Imma Be,The Black Eyed Peas,complemento,234.04,Grupo/Outro
+2013-12-14,2010s,Wrecking Ball,Miley Cyrus,complemento,223,Grupo/Outro
+2011-05-14,2010s,E.T.,Katy Perry featuring Kanye West,complemento,206.373,Feminino
+2013-05-18,2010s,Can't Hold Us,Macklemore & Ryan Lewis featuring Ray Dalton,complemento,295,Grupo/Outro
+2019-12-07,2010s,Circles,Post Malone,complemento,215.093,Masculino
+2010-10-23,2010s,Just the Way You Are,Bruno Mars,complemento,220,Masculino
+2017-06-03,2010s,Despacito,Luis Fonsi and Daddy Yankee featuring Justin Bieber,complemento,222.169,NA
+2010-08-07,2010s,Love the Way You Lie,Eminem featuring Rihanna,complemento,263.1605,Masculino
+2015-03-28,2010s,Uptown Funk,Mark Ronson featuring Bruno Mars,complemento,NA,Masculino
+2019-06-08,2010s,Old Town Road,Lil Nas X featuring Billy Ray Cyrus,complemento,201.882,Masculino
+2017-07-29,2010s,Despacito,Luis Fonsi and Daddy Yankee featuring Justin Bieber,complemento,222.169,NA
+2017-03-18,2010s,Shape of You,Ed Sheeran,complemento,228.643,Masculino
+2013-11-30,2010s,Royals,Lorde,complemento,224,Feminino
+2017-08-05,2010s,Despacito,Luis Fonsi and Daddy Yankee featuring Justin Bieber,complemento,222.169,NA
+2017-02-04,2010s,Bad and Boujee,Migos featuring Lil Uzi Vert,complemento,241,NA
+2017-01-28,2010s,Shape of You,Ed Sheeran,complemento,228.643,Masculino
+2013-02-09,2010s,Thrift Shop,Macklemore & Ryan Lewis featuring Wanz,complemento,235.99099999999999,NA
+2012-10-13,2010s,One More Night,Maroon 5,complemento,220.273,Grupo/Outro
+2010-05-01,2010s,Nothin' on You,B.o.B featuring Bruno Mars,complemento,264,Masculino
+2010-01-09,2010s,Tik Tok,Kesha,complemento,201.32,Feminino
+2013-03-09,2010s,Harlem Shake,Baauer,complemento,192.44,Masculino
+2016-11-19,2010s,Closer,The Chainsmokers featuring Halsey,complemento,221.599,NA
+2014-05-31,2010s,All of Me,John Legend,complemento,280.98,Masculino
+2016-12-17,2010s,Black Beatles,Rae Sremmurd featuring Gucci Mane,complemento,230.68,Grupo/Outro
+2013-06-29,2010s,Blurred Lines,Robin Thicke featuring T.I. and Pharrell,complemento,226.0755,NA
+2018-01-06,2010s,Perfect,Ed Sheeran and Beyoncé,complemento,259,NA
+2013-06-01,2010s,Can't Hold Us,Macklemore & Ryan Lewis featuring Ray Dalton,complemento,295,Grupo/Outro
+2016-06-18,2010s,One Dance,Drake featuring Wizkid and Kyla,complemento,180.5265,Masculino
+2016-12-24,2010s,Black Beatles,Rae Sremmurd featuring Gucci Mane,complemento,230.68,Grupo/Outro
+2016-10-01,2010s,Closer,The Chainsmokers featuring Halsey,complemento,221.599,NA
+2019-05-11,2010s,Old Town Road,Lil Nas X featuring Billy Ray Cyrus,complemento,201.882,Masculino
+2015-09-26,2010s,Can't Feel My Face,The Weeknd,complemento,213.525,Masculino
+2012-07-14,2010s,Call Me Maybe,Carly Rae Jepsen,complemento,NA,NA
+2013-06-22,2010s,Blurred Lines,Robin Thicke featuring T.I. and Pharrell,complemento,226.0755,NA
+2016-08-06,2010s,Cheap Thrills,Sia featuring Sean Paul,complemento,211,Feminino
+2010-04-10,2010s,Rude Boy,Rihanna,complemento,225.653,Feminino
+2010-09-11,2010s,Love the Way You Lie,Eminem featuring Rihanna,complemento,263.1605,Masculino
+2010-02-27,2010s,Tik Tok,Kesha,complemento,201.32,Feminino
+2018-11-03,2010s,Girls Like You,Maroon 5 featuring Cardi B,complemento,215.11450000000002,Grupo/Outro
+2018-06-23,2010s,Nice for What,Drake,complemento,210.3735,Masculino
+2012-02-11,2010s,Set Fire to the Rain,Adele,complemento,277.04,Feminino
+2017-06-10,2010s,Despacito,Luis Fonsi and Daddy Yankee featuring Justin Bieber,complemento,222.169,NA
+2015-03-21,2010s,Uptown Funk,Mark Ronson featuring Bruno Mars,complemento,NA,Masculino
+2014-08-23,2010s,Rude,Magic!,complemento,219.44,Grupo/Outro
+2016-10-15,2010s,Closer,The Chainsmokers featuring Halsey,complemento,221.599,NA
+2016-07-30,2010s,One Dance,Drake featuring Wizkid and Kyla,complemento,180.5265,Masculino
+2012-04-21,2010s,We Are Young,Fun featuring Janelle Monáe,complemento,250.626,Grupo/Outro
+2021-04-17,2020s,Leave the Door Open,Silk Sonic ( Bruno Mars and Anderson .Paak ),piloto,NA,NA
+2026-02-14,2020s,Choosin' Texas,Ella Langley,piloto,232,Feminino
+2026-09-19,2020s,Choosin' Texas,Ella Langley,piloto,232,Feminino
+2025-03-22,2020s,Luther,Kendrick Lamar and SZA,piloto,147,NA
+2022-08-06,2020s,About Damn Time,Lizzo,piloto,191.822,NA
+2023-08-26,2020s,Rich Men North of Richmond,Oliver Anthony Music,complemento,NA,NA
+2021-12-04,2020s,Easy on Me,Adele,complemento,NA,Feminino
+2026-08-08,2020s,Choosin' Texas,Ella Langley,complemento,232,Feminino
+2023-02-04,2020s,Flowers,Miley Cyrus,complemento,201,Grupo/Outro
+2022-09-24,2020s,As It Was,Harry Styles,complemento,NA,Masculino
+2026-05-30,2020s,Janice STFU,Drake,complemento,237.344,Masculino
+2021-05-15,2020s,Save Your Tears,The Weeknd and Ariana Grande,complemento,191.013,NA
+2025-06-21,2020s,Manchild,Sabrina Carpenter,complemento,213.8225,Feminino
+2026-04-04,2020s,Swim,BTS,complemento,159.0035,Grupo/Outro
+2024-03-02,2020s,Texas Hold 'Em,Beyoncé,complemento,235,Feminino
+2025-02-15,2020s,Die with a Smile,Lady Gaga and Bruno Mars,complemento,NA,NA
+2024-10-19,2020s,A Bar Song (Tipsy),Shaboozey,complemento,171.1455,Masculino
+2023-12-30,2020s,All I Want for Christmas Is You,Mariah Carey,complemento,268.673,Feminino
+2020-09-26,2020s,WAP,Cardi B featuring Megan Thee Stallion,complemento,259.9495,Feminino
+2022-08-27,2020s,Super Freaky Girl,Nicki Minaj,complemento,171.2285,NA
+2025-02-01,2020s,Die with a Smile,Lady Gaga and Bruno Mars,complemento,NA,NA
+2021-01-30,2020s,Drivers License,Olivia Rodrigo,complemento,242.026,Feminino
+2021-01-09,2020s,Mood,24kGoldn featuring Iann Dior,complemento,140.88,Masculino
+2026-03-21,2020s,Choosin' Texas,Ella Langley,complemento,232,Feminino
+2021-01-02,2020s,All I Want for Christmas Is You,Mariah Carey,complemento,268.673,Feminino
+2025-07-26,2020s,Ordinary,Alex Warren,complemento,186,NA
+2026-04-25,2020s,Choosin' Texas,Ella Langley,complemento,232,Feminino
+2022-04-23,2020s,First Class,Jack Harlow,complemento,173.933,Masculino
+2026-05-09,2020s,Choosin' Texas,Ella Langley,complemento,232,Feminino
+2026-02-21,2020s,DTMF,Bad Bunny,complemento,236,Masculino
+2024-08-31,2020s,A Bar Song (Tipsy),Shaboozey,complemento,171.1455,Masculino
+2023-08-19,2020s,Last Night,Morgan Wallen,complemento,152.09300000000002,NA
+2021-07-10,2020s,Butter,BTS,complemento,164.22050000000002,Grupo/Outro
+2021-07-31,2020s,Butter,BTS,complemento,164.22050000000002,Grupo/Outro
+2023-07-29,2020s,Seven,Jung Kook featuring Latto,complemento,184.32,Masculino
+2024-03-09,2020s,Texas Hold 'Em,Beyoncé,complemento,235,Feminino
+2026-06-13,2020s,Hate That I Made You Love Me,Ariana Grande,complemento,198,NA
+2025-12-13,2020s,All I Want for Christmas Is You,Mariah Carey,complemento,268.673,Feminino
+2021-02-06,2020s,Drivers License,Olivia Rodrigo,complemento,242.026,Feminino
+2025-01-11,2020s,Die with a Smile,Lady Gaga and Bruno Mars,complemento,NA,NA
+2025-05-31,2020s,What I Want,Morgan Wallen featuring Tate McRae,complemento,184.7585,Masculino
+2026-05-16,2020s,Choosin' Texas,Ella Langley,complemento,232,Feminino
+2024-04-13,2020s,Like That,"Future , Metro Boomin and Kendrick Lamar",complemento,NA,NA
+2022-09-03,2020s,As It Was,Harry Styles,complemento,NA,Masculino
+2021-03-27,2020s,Up,Cardi B,complemento,156.8425,NA
+2022-09-10,2020s,As It Was,Harry Styles,complemento,NA,Masculino
+2020-04-11,2020s,Blinding Lights,The Weeknd,complemento,200.256,Masculino
+2026-01-03,2020s,All I Want for Christmas Is You,Mariah Carey,complemento,268.673,Feminino
+2023-06-17,2020s,Last Night,Morgan Wallen,complemento,152.09300000000002,NA
+2021-11-20,2020s,Easy on Me,Adele,complemento,NA,Feminino
+2022-01-15,2020s,Easy on Me,Adele,complemento,NA,Feminino
+2022-04-16,2020s,As It Was,Harry Styles,complemento,NA,Masculino
+2020-11-28,2020s,Mood,24kGoldn featuring Iann Dior,complemento,140.88,Masculino
+2022-06-04,2020s,As It Was,Harry Styles,complemento,NA,Masculino
+2020-02-01,2020s,The Box,Roddy Ricch,complemento,184.5,Masculino
+2021-03-13,2020s,Drivers License,Olivia Rodrigo,complemento,242.026,Feminino
+2023-10-21,2020s,First Person Shooter,Drake featuring J. Cole,complemento,247.444,Masculino
+2022-04-30,2020s,As It Was,Harry Styles,complemento,NA,Masculino
+2025-09-13,2020s,Golden,"Huntrix: Ejae, Audrey Nuna and Rei Ami",complemento,NA,NA
+2020-01-25,2020s,The Box,Roddy Ricch,complemento,184.5,Masculino
+2020-03-14,2020s,The Box,Roddy Ricch,complemento,184.5,Masculino
+2025-08-02,2020s,Ordinary,Alex Warren,complemento,186,NA
+2023-03-11,2020s,Die for You,The Weeknd and Ariana Grande,complemento,NA,NA
+2025-11-15,2020s,The Fate of Ophelia,Taylor Swift,complemento,226.066,Feminino
+2024-05-18,2020s,Not Like Us,Kendrick Lamar,complemento,274,Masculino
+2026-02-28,2020s,Opalite,Taylor Swift,complemento,235,Feminino
+2024-01-06,2020s,Rockin' Around the Christmas Tree,Brenda Lee,complemento,123.973,NA
+2026-01-31,2020s,I Just Might,Bruno Mars,complemento,213,Masculino
+2020-12-05,2020s,Life Goes On,BTS,complemento,207,Grupo/Outro
+2023-02-11,2020s,Flowers,Miley Cyrus,complemento,201,Grupo/Outro
+2024-11-30,2020s,A Bar Song (Tipsy),Shaboozey,complemento,171.1455,Masculino
+2025-10-25,2020s,The Fate of Ophelia,Taylor Swift,complemento,226.066,Feminino
+2022-08-20,2020s,Break My Soul,Beyoncé,complemento,277,Feminino
+2025-11-01,2020s,The Fate of Ophelia,Taylor Swift,complemento,226.066,Feminino
+2023-01-07,2020s,All I Want for Christmas Is You,Mariah Carey,complemento,268.673,Feminino
+2020-02-08,2020s,The Box,Roddy Ricch,complemento,184.5,Masculino
