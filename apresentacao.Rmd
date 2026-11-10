@@ -1,0 +1,152 @@
+---
+title: "Duração e presença feminina entre os 1º lugares da Billboard Hot 100"
+subtitle: "ME430 – Técnicas de Amostragem"
+author: "Autor 1 · Autor 2 · Autor 3 · Autor 4"
+date: "Novembro de 2026"
+output:
+  ioslides_presentation:
+    widescreen: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(dplyr); library(readr); library(ggplot2); library(knitr)
+
+quadro <- read_csv("top_hits_number_one.csv", show_col_types = FALSE) %>%
+  mutate(ano = as.integer(substr(as.character(date), 1, 4)),
+         periodo = paste0(ano %/% 10 * 10, "s"))
+amostra <- read_csv("amostra.csv",
+                    col_types = cols(.default = "c", ano = "i", duracao_s = "d", mulher = "i"))
+
+rotulo <- c("1950s" = "1958–59", "1960s" = "1960s", "1970s" = "1970s", "1980s" = "1980s",
+            "1990s" = "1990s", "2000s" = "2000s", "2010s" = "2010s", "2020s" = "2020–26")
+estratos <- count(quadro, periodo, name = "N_h") %>% mutate(n_h = 30, pi_h = n_h / N_h)
+
+estimativas <- amostra %>%
+  group_by(periodo) %>%
+  summarise(n_h = n(), media = mean(duracao_s), s_h = sd(duracao_s), p_h = mean(mulher)) %>%
+  left_join(select(estratos, periodo, N_h), by = "periodo") %>%
+  mutate(f_h = n_h / N_h,
+         me_media = qt(0.975, n_h - 1) * sqrt((1 - f_h) * s_h^2 / n_h),
+         me_p     = qnorm(0.975) * sqrt((1 - f_h) * p_h * (1 - p_h) / (n_h - 1)),
+         Periodo  = factor(rotulo[periodo], levels = rotulo))
+
+COR  <- "#2a78d6"
+tema <- theme_minimal(base_size = 16) +
+  theme(panel.grid.major.x = element_blank(), panel.grid.minor = element_blank())
+```
+
+## A pergunta
+
+Como mudaram, ao longo das décadas, as músicas que chegaram ao **1º lugar** da Billboard Hot 100?
+
+- Qual a **duração média** dessas músicas em cada período?
+- Qual a **proporção de semanas** com uma **artista mulher** no topo?
+
+<br>
+
+Período estudado: **04/08/1958 a 17/10/2026**
+
+## População e unidade elementar
+
+- **População:** todas as semanas da Billboard Hot 100 no período → **N = 3.560 semanas**
+- **Unidade elementar:** a **semana**, representada pela música em 1º lugar
+- Uma música que ficou 10 semanas no topo conta **10 vezes**: o foco é a música mais popular de cada semana
+- **Quadro amostral:** a lista completa das semanas (`top_hits_number_one.csv`)
+- **Variáveis:** duração da música (s) e gênero do artista principal
+
+## Estratos: oito períodos {#estratos}
+
+<style>
+#estratos table td, #estratos table th { padding: 7px 18px !important; font-size: 22px !important; }
+</style>
+
+```{r tab-estratos}
+estratos %>%
+  mutate(Período = rotulo[periodo], pi_h = round(pi_h, 3)) %>%
+  select(Período, N_h, n_h, pi_h) %>%
+  kable(col.names = c("Período", "Semanas (N_h)", "Amostra (n_h)", "Prob. de seleção (n_h/N_h)"))
+```
+
+## Plano amostral
+
+- **Amostragem aleatória estratificada**, em um único estágio
+- Em cada período: **AAS sem reposição de 30 semanas**, sorteios independentes (semente 2026)
+- **Alocação igual** → precisões parecidas, o que facilita comparar os períodos
+  - Proporcional deixaria 1958–59 com apenas ~5 semanas
+- **Tamanho:** n = 240 semanas, definido pelo **tempo disponível** para a coleta
+  - Para margens de 10 s e 10 p.p., seriam necessárias ~650 semanas
+- Cada período é estimado **separadamente**, sem estimativa combinada
+
+## Coleta dos dados
+
+- **Após o sorteio**, só para as **198 músicas** das semanas sorteadas
+- **Consulta automatizada (API)** à base MusicBrainz, feita em R
+  - Duração: mediana das gravações da música
+  - Gênero: cadastro do artista
+- **Revisão manual** do que faltou ou ficou ambíguo
+  - 9 durações (Wikipedia) e 96 classificações de gênero
+- **Critérios de gênero**
+  - Artista principal = **primeiro nome creditado**
+  - Grupo conta como mulher só se for **só de mulheres**
+
+## Estimação (em cada período h)
+
+**Duração média**
+
+$$\bar{y}_h = \frac{1}{n_h}\sum_{i=1}^{n_h} y_{hi}, \qquad
+\widehat{\mathrm{Var}}(\bar{y}_h) = (1 - f_h)\,\frac{s_h^2}{n_h}$$
+IC 95%: $\;\bar{y}_h \pm t_{29;\,0{,}025}\sqrt{\widehat{\mathrm{Var}}(\bar{y}_h)}$
+
+**Proporção de artistas mulheres**
+
+$$\hat{P}_h = \frac{1}{n_h}\sum_{i=1}^{n_h} y_{hi}, \qquad
+\widehat{\mathrm{Var}}(\hat{P}_h) = (1 - f_h)\,\frac{\hat{P}_h(1 - \hat{P}_h)}{n_h - 1}$$
+IC 95%: $\;\hat{P}_h \pm 1{,}96\sqrt{\widehat{\mathrm{Var}}(\hat{P}_h)}$ · com $f_h = n_h/N_h$ (correção para população finita)
+
+## Resultado: duração média
+
+```{r fig-duracao, fig.width = 10, fig.height = 4, out.width = "100%"}
+ggplot(estimativas, aes(x = Periodo, y = media)) +
+  geom_line(aes(group = 1), color = COR, alpha = 0.4) +
+  geom_errorbar(aes(ymin = media - me_media, ymax = media + me_media), width = 0.2, color = COR) +
+  geom_point(size = 3.5, color = COR) +
+  scale_y_continuous(breaks = seq(150, 300, 30),
+                     labels = function(x) sprintf("%d:%02d", x %/% 60, x %% 60)) +
+  labs(x = NULL, y = "Duração média (min:s)") + tema
+```
+
+As músicas ficaram **~1min40s mais longas** até os anos 80/90 e depois **encurtaram**: os intervalos não se sobrepõem
+
+## Resultado: artistas mulheres
+
+```{r fig-mulheres, fig.width = 10, fig.height = 4, out.width = "100%"}
+ggplot(estimativas, aes(x = Periodo, y = p_h)) +
+  geom_line(aes(group = 1), color = COR, alpha = 0.4) +
+  geom_errorbar(aes(ymin = pmax(0, p_h - me_p), ymax = pmin(1, p_h + me_p)), width = 0.2, color = COR) +
+  geom_point(size = 3.5, color = COR) +
+  scale_y_continuous(labels = function(x) paste0(round(100 * x), "%"), limits = c(0, NA)) +
+  labs(x = NULL, y = "Semanas com artista mulher") + tema
+```
+
+De **~20%** (1960–1989) para **33% a 47%** a partir dos anos 90, mas com margens de **14 a 18 p.p.**
+
+## Limitações
+
+- **Margens maiores que o desejado:** 30 semanas por período (tempo disponível)
+  - Duração: ±6 a ±23 s · Proporção: ±14 a ±18 p.p.
+- **Versões de álbum:** a base às vezes registra uma versão mais longa que o single
+  - Tende a **superestimar** a duração, sobretudo nos anos 70 e 80
+- **Participações (*featuring*)** não contam
+  - Tende a **subestimar** a presença feminina nas décadas recentes
+- **A parada mudou:** de vendas e rádio para *streaming*
+
+## Conclusão
+
+- A **duração média** cresceu até os anos 80/90 (~4min25s) e depois caiu (~3min22s hoje)
+- A **presença feminina** no 1º lugar aumentou a partir dos anos 90
+- As tendências se mantêm mesmo considerando as limitações
+
+<br>
+
+**Obrigado!**

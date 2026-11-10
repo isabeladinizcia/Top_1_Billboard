@@ -31,7 +31,7 @@ library(readr)
 
 O objetivo deste trabalho é estimar, para cada década, a duração média e a
 proporção de artistas mulheres entre as músicas que ocuparam o 1º lugar da parada
-semanal Billboard Hot 100, de modo a comparar como essas características se
+semanal Billboard Hot 100 [@billboard], de modo a comparar como essas características se
 modificaram ao longo do tempo.
 
 A população-alvo é formada por todas as semanas de divulgação da Billboard Hot 100
@@ -43,8 +43,8 @@ semanas é contada em cada uma delas, o que reflete o fato de ter sido a preferi
 do público por mais tempo. A população amostrada coincide com a população-alvo,
 pois o quadro amostral é a lista completa das semanas da parada (arquivo
 `top_hits_number_one.csv`), em que cada semana aparece uma única vez. Para a
-análise, essa população é dividida em H = 8 períodos — 1958–1959, as décadas de
-1960 a 2010 e o período 2020–2026 —, cada um com $N_h$ semanas
+análise, essa população é dividida em H = 8 períodos: 1958–1959, as décadas de
+1960 a 2010 e o período 2020–2026, cada um com $N_h$ semanas
 (Tabela \@ref(tab:tab-estratos)).
 
 ```{r quadro, include=FALSE}
@@ -135,10 +135,59 @@ $N_h/N$, se o interesse fosse uma estimativa única para todo o período de 1958
 
 ## Protocolo de Coleta e Métodos de Estimação
 
-<!-- *	Como as observações serão coletadas?  -->
-<!-- *	Descreva seu método de estimação do(s) parâmetro(s) populacional e da variância associada às estimativas. -->
+A seleção das semanas é feita no R a partir do quadro amostral: em cada período,
+sorteiam-se 30 semanas por AAS sem reposição, com a semente 2026. Para cada semana
+sorteada, registram-se a duração da música que ocupou o 1º lugar e o gênero do seu
+artista principal. Quando uma mesma música aparece em mais de uma semana sorteada,
+ela é consultada uma única vez e os valores obtidos valem para todas essas semanas.
 
-Aqui um exemplo citando @bolfarine2005.
+As duas informações são obtidas na base pública de dados musicais MusicBrainz [@musicbrainz], a
+partir do título da música e do nome do artista. Nos casos em que a base não
+retorna a informação, ou retorna um resultado ambíguo, a coleta é completada
+manualmente: a duração é a da versão single original informada na página da
+música na Wikipedia [@wikipedia], e o gênero é conferido na página do artista. Para que a
+classificação seja objetiva, adotam-se três critérios:
+
+1. O artista principal é o primeiro nome creditado, de modo que, em duetos e participações, só
+ele é considerado. 
+
+2. Grupos são classificados como femininos apenas quando formados exclusivamente por mulheres; grupos com homens e mulheres formam a categoria "misto". 
+
+3. Uma semana conta como "artista mulher" somente quando o artista principal é uma mulher ou um grupo só de mulheres.
+
+As estimativas são feitas separadamente em cada período h, com base na sua
+amostra de $n_h = 30$ semanas e na fração amostral $f_h = n_h/N_h$. Para a duração,
+sendo $y_{hi}$ a duração, em segundos, da música da i-ésima semana sorteada, a
+média do período é estimada pela média amostral, e a sua variância pela expressão
+usual da AAS sem reposição:
+
+$$
+\hat{\bar{Y}}_h = \bar{y}_h = \frac{1}{n_h}\sum_{i=1}^{n_h} y_{hi}, \qquad
+s_h^2 = \frac{1}{n_h - 1}\sum_{i=1}^{n_h}\left(y_{hi} - \bar{y}_h\right)^2, \qquad
+\widehat{\mathrm{Var}}(\bar{y}_h) = (1 - f_h)\,\frac{s_h^2}{n_h}.
+$$
+
+O intervalo de 95% de confiança é dado por
+$\bar{y}_h \pm t_{n_h-1;\,0{,}025}\sqrt{\widehat{\mathrm{Var}}(\bar{y}_h)}$, em que
+se usa a distribuição t de Student por causa do tamanho reduzido da amostra em
+cada período.
+
+Para a proporção, define-se $y_{hi} = 1$ quando o artista principal da semana é
+uma mulher e $y_{hi} = 0$ caso contrário. A proporção do período é estimada pela
+proporção amostral, com variância estimada por
+
+$$
+\hat{P}_h = \frac{1}{n_h}\sum_{i=1}^{n_h} y_{hi}, \qquad
+\widehat{\mathrm{Var}}(\hat{P}_h) = (1 - f_h)\,\frac{\hat{P}_h\,(1 - \hat{P}_h)}{n_h - 1},
+$$
+
+e o intervalo de 95% de confiança é
+$\hat{P}_h \pm z_{0{,}025}\sqrt{\widehat{\mathrm{Var}}(\hat{P}_h)}$, com
+$z_{0{,}025} = 1{,}96$. Em ambos os casos, o fator $(1 - f_h)$ corrige a variância
+para a população finita, o que é relevante sobretudo em 1958–1959, em que a amostra
+corresponde a cerca de 40% das semanas do período. Como o objetivo é comparar os
+períodos, não se calcula uma estimativa combinada para 1958–2026, conforme
+discutido na seção anterior.
 
 
 # Execução e Resultados
@@ -146,77 +195,214 @@ Aqui um exemplo citando @bolfarine2005.
 
 ## Amostragem
 
-<!-- *	Quais os passos do procedimento que você acabou realmente utilizando para coletar sua amostra? -->
-<!-- *	Como esses procedimentos diferem (se for o caso) do plano amostral proposto originalmente? -->
-<!-- *	Você encontrou problemas ao coletar os dados?  Se sim, descreva brevemente como você lidou com esses problemas. -->
+```{r sorteio, include=FALSE}
+set.seed(2026)
+sorteio <- quadro %>%
+  group_by(periodo) %>%
+  slice_sample(n = N_POR_ESTRATO, replace = FALSE) %>%
+  ungroup()
+
+# Dados coletados para as semanas sorteadas
+amostra <- read_csv("amostra.csv",
+                    col_types = cols(.default = "c", ano = "i",
+                                     duracao_s = "d", mulher = "i"))
+
+# Conferência: a amostra coletada é exatamente a sorteada
+stopifnot(setequal(sorteio$date, amostra$date))
+
+n_musicas <- n_distinct(paste(amostra$song, amostra$artist))   # 198
+```
+
+A amostra foi selecionada conforme o plano descrito na seção anterior. A partir do
+quadro amostral, sortearam-se no R, com a semente 2026, 30 semanas em cada um dos
+oito períodos, por AAS sem reposição e de forma independente entre os períodos, o
+que resultou em n = 240 semanas.
+
+Inicialmente, o grupo havia considerado usar essas 240 semanas como amostra piloto,
+para estimar o desvio-padrão da duração em cada período e, a partir dele, calcular
+o tamanho de amostra necessário para margens de erro de 10 segundos e de 10 pontos
+percentuais. Esse cálculo indicou a necessidade de cerca de 650 semanas, o que
+exigiria a coleta de mais de 400 semanas adicionais, número incompatível com o
+tempo disponível. Optou-se, então, por adotar a própria amostra de 30 semanas por
+período como amostra final, aceitando margens de erro maiores, que são
+apresentadas na seção de resultados.
+
+Como algumas músicas permaneceram várias semanas no 1º lugar, mais de uma semana
+sorteada pode corresponder à mesma música: as 240 semanas da amostra correspondem a
+`r n_musicas` músicas distintas. Isso não altera o delineamento, já que a unidade
+elementar é a semana, mas reduz o trabalho de coleta, pois cada música precisou ser
+consultada uma única vez. Não houve problemas na etapa de seleção.
 
 
 ## Coleta de Dados
 
-<!-- *	Como as observações/medidas foram feitas na amostra coletada? -->
-<!-- *	Houve algum problema de medição? Se sim, como você lidou com esses problemas? -->
-<!-- *	Quais suas considerações sobre o efeito de erros não amostrais na sua pesquisa? -->
+Para cada uma das 198 músicas distintas da amostra, a duração e o gênero do
+artista principal foram buscados na base MusicBrainz [@musicbrainz], pelo título
+da música e pelo nome do artista. A duração foi registrada como a mediana das
+durações das gravações que a base associou àquele título e artista, e o gênero, a
+partir do campo correspondente no cadastro do artista. Por esse procedimento,
+obteve-se a duração de 231 das 240 semanas; as 9 restantes foram completadas
+manualmente, com a duração da versão single informada na Wikipedia [@wikipedia].
+
+O gênero exigiu mais trabalho manual. A base classifica bandas e duplas apenas
+como "grupo", sem indicar sua composição, e em alguns casos não encontrou o
+artista ou o classificou de forma incorreta — cantoras como Pink e Miley Cyrus,
+por exemplo, apareceram como grupo. Assim, 144 semanas puderam ser classificadas
+diretamente, e as outras 96, correspondentes a 82 músicas, foram classificadas à
+mão segundo os critérios descritos no protocolo. Três casos geraram dúvida e foram
+decididos pelo grupo: "Tie A Yellow Ribbon Round The Ole Oak Tree", creditada a
+Dawn featuring Tony Orlando, foi classificada como masculina, pois o vocal
+principal é de Tony Orlando, embora Dawn fosse uma dupla feminina; "Family
+Affair", de Sly & The Family Stone, foi classificada como masculina pelo critério
+do primeiro nome creditado, embora a banda tivesse integrantes mulheres; e "We
+Don't Talk About Bruno", interpretada pelo elenco do filme *Encanto*, foi
+classificada como feminina pelo mesmo critério. Ao final, todas as 240 semanas
+tiveram duração e gênero registrados, sem perda de nenhuma unidade da amostra:
+70 com artista mulher, 156 com artista homem e 14 com grupo misto.
+
+O principal problema de medição envolve a duração. Como uma mesma música costuma
+ter várias gravações: versão de álbum, single, remasterizações, versões
+estendidas ou ao vivo, a mediana fornecida pela base nem sempre corresponde à
+versão que chegou ao 1º lugar. Ao conferir na Wikipedia as maiores durações de
+cada período, verificou-se que, em vários casos, a base havia registrado a versão
+de álbum ou estendida, mais longa que a do single: em "Money For Nothing", por
+exemplo, a duração obtida foi de 405 segundos, enquanto o single tem 278. Uma
+verificação mais ampla, com 154 músicas da amostra, mostrou que em cerca de
+dois terços dos casos a diferença entre as duas fontes foi de até 5 segundos, mas
+em 15 músicas ela passou de 30 segundos, quase sempre com a base indicando uma
+duração maior. Por limitação de tempo, manteve-se a duração da base para essas
+músicas.
+
+Esse erro de medição não é capturado pelas variâncias calculadas, que refletem
+apenas o erro amostral. Como ele tende a ocorrer na direção de durações maiores,
+é provável que as médias estimadas estejam superestimadas,
+sobretudo nos períodos em que esse tipo de música é mais frequente, como os anos
+1970 e 1980, e que os desvios-padrão estejam inflados, o que torna os intervalos
+de confiança um pouco mais largos. Há ainda outras fontes de erro não amostral a
+considerar. O critério do primeiro nome creditado desconsidera as mulheres que
+aparecem como participação (*featuring*), prática comum nas décadas recentes, o
+que leva a proporção de artistas mulheres a ser subestimada nesses períodos. Além
+disso, a própria forma de compor a parada mudou ao longo do tempo: de vendas e
+execuções em rádio passou a incluir *downloads* e *streaming*, de modo que "1º
+lugar" não mede exatamente a mesma coisa em todos os períodos. Por fim, a
+classificação manual envolve julgamento, mas os critérios fixados de antemão e
+os poucos casos de dúvida indicam que o seu efeito sobre as estimativas é pequeno.
 
 ## Análise e Estimativas Obtidas
 
-<!-- *	Como o(s) parâmetro(s) populacional foi (foram) estimado(s) (apresente a fórmula exata utilizada)? -->
-<!-- *	Como você estimou a variância associada à(s) estimativa(s) (apresente a fórmula exata utilizada)? -->
-<!-- * Se você utilizou algum software, o código deve estar contido neste .rmd (echo=FALSE). -->
-
-```{r simulacao-exemplar, include=FALSE}
-# Exemplo genérico de cálculo numérico no R para uso via código inline
-amostra_exemplo <- c(12.4, 15.1, 10.8, 14.2, 11.5, 13.0, 12.1)
-n_amostra <- length(amostra_exemplo)
-media_estimada <- mean(amostra_exemplo)
-dp_estimado <- sd(amostra_exemplo)
+```{r estimativas, include=FALSE}
+CONF <- 0.95
+estimativas <- amostra %>%
+  group_by(periodo) %>%
+  summarise(n_h = n(), media = mean(duracao_s), s_h = sd(duracao_s),
+            p_h = mean(mulher), .groups = "drop") %>%
+  left_join(select(estratos, periodo, N_h), by = "periodo") %>%
+  mutate(f_h      = n_h / N_h,
+         me_media = qt(1 - (1 - CONF) / 2, df = n_h - 1) * sqrt((1 - f_h) * s_h^2 / n_h),
+         me_p     = qnorm(1 - (1 - CONF) / 2) * sqrt((1 - f_h) * p_h * (1 - p_h) / (n_h - 1)),
+         Periodo  = factor(rotulo[periodo], levels = rotulo))
 ```
 
-<!-- Exemplo de texto usando r inline -->
+As estimativas foram calculadas separadamente em cada período, com os estimadores
+e as variâncias apresentados no protocolo de estimação: a média amostral
+$\bar{y}_h$, com variância $(1 - f_h)\,s_h^2/n_h$ e intervalo baseado na
+distribuição t com $n_h - 1 = 29$ graus de liberdade, e a proporção amostral
+$\hat{P}_h$, com variância $(1 - f_h)\,\hat{P}_h(1 - \hat{P}_h)/(n_h - 1)$ e
+intervalo baseado na distribuição normal. Os resultados estão na
+Tabela \@ref(tab:tab-estimativas) e nas Figuras \@ref(fig:fig-duracao) e
+\@ref(fig:fig-mulheres).
 
-A partir do procedimento aplicado, obteve-se um tamanho amostral de $n = `r n_amostra`$ observações. A estimativa pontual para a média populacional é de `r round(media_estimada, 2)`, com desvio padrão amostral de `r round(dp_estimado, 2)`.
-
-<!-- Exemplo de Tabela com Referência Cruzada -->
-
-A Tabela \@ref(tab:tab-resumo-estatistico) ilustra o formato padrão para exibição de tabelas informativas no relatório.
-
-```{r tab-resumo-estatistico}
-dados_tabela <- data.frame(
-  Métrica = c("Tamanho Amostral (n)", "Média Estimada", "Desvio Padrão"),
-  Valor = c(n_amostra, round(media_estimada, 2), round(dp_estimado, 2))
-)
-
-knitr::kable(
-  dados_tabela,
-  col.names = c("Métrica Estatística", "Valor"),
-  caption = "Exemplo de tabela resumo para demonstração de referência cruzada."
-)
+```{r tab-estimativas}
+estimativas %>%
+  transmute(Periodo, media = round(media), ic_m = sprintf("%.0f a %.0f", media - me_media, media + me_media),
+            p = round(100 * p_h), ic_p = sprintf("%.0f%% a %.0f%%", 100 * pmax(0, p_h - me_p), 100 * pmin(1, p_h + me_p))) %>%
+  kable(col.names = c("Período", "Duração média (s)", "IC 95% (s)", "Artista mulher (%)", "IC 95%"),
+        caption = "Estimativas por período, com intervalos de 95% de confiança.")
 ```
 
+A duração média das músicas que chegaram ao 1º lugar cresceu de forma marcante
+até os anos 1980 e 1990, passando de cerca de 2 min 45 s em 1958–1969 para cerca
+de 4 min 25 s, e depois voltou a diminuir, chegando a aproximadamente 3 min 22 s
+em 2020–2026 (Figura \@ref(fig:fig-duracao)). Como os intervalos de confiança de
+1958–1969 não se sobrepõem aos de 1980–1999, nem os de 1990–1999 ao de
+2020–2026, essas diferenças não podem ser atribuídas apenas ao acaso da amostra.
+As margens de erro obtidas variaram de 6 a 23 segundos; a maior delas, nos anos
+1980, reflete a grande variabilidade das durações nesse período, que inclui
+desde canções curtas até faixas de mais de seis minutos.
 
-
-<!-- Exemplo de Gráfico com Referência Cruzada -->
-
-A Figura \@ref(fig:fig-distribuicao-amostral) exibe a distribuição da variável de interesse.
-
-```{r fig-distribuicao-amostral, fig.cap = "Exemplo de figura demonstrativa para aplicação de referência cruzada."}
-df_grafico <- data.frame(Valor = amostra_exemplo)
-
-ggplot(df_grafico, aes(x = Valor)) +
-  geom_histogram(bins = 5, fill = "steelblue", color = "black", alpha = 0.7) +
-  labs(
-    x = "Variável Mensurada",
-    y = "Frequência"
-  ) +
-  theme_minimal()
+```{r fig-duracao, fig.cap = "Duração média estimada das músicas em 1º lugar, por período, com intervalos de 95% de confiança.", fig.height = 4}
+ggplot(estimativas, aes(x = Periodo, y = media)) +
+  geom_line(aes(group = 1), color = "#2a78d6", alpha = 0.4) +
+  geom_errorbar(aes(ymin = media - me_media, ymax = media + me_media), width = 0.2, color = "#2a78d6") +
+  geom_point(size = 3, color = "#2a78d6") +
+  scale_y_continuous(breaks = seq(150, 300, 30),
+                     labels = function(x) sprintf("%d:%02d", x %/% 60, x %% 60)) +
+  labs(x = NULL, y = "Duração média (min:s)") +
+  theme_minimal(base_size = 12) +
+  theme(panel.grid.major.x = element_blank(), panel.grid.minor = element_blank())
 ```
 
-Como observado na Figura \@ref(fig:fig-distribuicao-amostral), as medições concentram-se em torno do valor estimado.
+A proporção de semanas com uma artista mulher no 1º lugar também mudou ao longo
+do tempo (Figura \@ref(fig:fig-mulheres)). Nenhuma das 30 semanas sorteadas em
+1958–1959 teve uma artista mulher como principal; de 1960 a 1989, a proporção
+estimada ficou em torno de 20%, e a partir dos anos 1990 passou a ficar entre 33%
+e 47%. As margens de erro, entre 14 e 18 pontos percentuais, são maiores que as
+da duração em termos relativos, de modo que os intervalos de períodos vizinhos se
+sobrepõem e as comparações entre décadas isoladas devem ser feitas com cautela;
+ainda assim, o conjunto das estimativas indica um aumento da presença feminina a
+partir dos anos 1990. Em 1958–1959, como nenhuma mulher foi observada, a
+estimativa da variância é nula e o intervalo usual não é informativo; isso não
+significa que não houve artistas mulheres no 1º lugar nesse período, mas sim que
+elas foram raras.
+
+```{r fig-mulheres, fig.cap = "Proporção estimada de semanas com artista mulher no 1º lugar, por período, com intervalos de 95% de confiança.", fig.height = 4}
+ggplot(estimativas, aes(x = Periodo, y = p_h)) +
+  geom_line(aes(group = 1), color = "#2a78d6", alpha = 0.4) +
+  geom_errorbar(aes(ymin = pmax(0, p_h - me_p), ymax = pmin(1, p_h + me_p)), width = 0.2, color = "#2a78d6") +
+  geom_point(size = 3, color = "#2a78d6") +
+  scale_y_continuous(labels = function(x) paste0(round(100 * x), "%"), limits = c(0, NA)) +
+  labs(x = NULL, y = "Semanas com artista mulher") +
+  theme_minimal(base_size = 12) +
+  theme(panel.grid.major.x = element_blank(), panel.grid.minor = element_blank())
+```
 
 
 ## Considerações Finais
 
-<!-- *	Apresente as estimativas geradas a partir do estudo. -->
-<!-- *	Quão boas você as considera, levando em conta a precisão estatística e outros problemas que você suspeita ou pode detectar? -->
+Este estudo estimou, a partir de uma amostra estratificada de 240 semanas, a
+duração média e a proporção de artistas mulheres entre as músicas que ocuparam o
+1º lugar da Billboard Hot 100 em oito períodos, de 1958 a 2026. Os resultados
+mostram que a duração média aumentou de cerca de 2 min 45 s, entre 1958 e 1969,
+para aproximadamente 4 min 25 s nas décadas de 1980 e 1990, e depois diminuiu de
+forma contínua, chegando a cerca de 3 min 22 s em 2020–2026. Já a proporção de
+semanas com uma artista mulher no topo, nula na amostra de 1958–1959 e em torno de
+20% entre 1960 e 1989, passou a ficar entre 33% e 47% a partir dos anos 1990.
+
+Quanto à precisão, as estimativas da duração são as mais confiáveis: as margens
+de erro, entre 6 e 23 segundos, são pequenas diante das diferenças observadas
+entre os períodos, e tanto o crescimento até os anos 1990 quanto a queda
+posterior são confirmados pelos intervalos de confiança. As estimativas da
+proporção são menos precisas, com margens entre 14 e 18 pontos percentuais,
+acima da meta de 10 pontos que seria desejável; elas permitem identificar a
+tendência geral de aumento da presença feminina, mas não distinguir com
+segurança décadas próximas entre si. Essa limitação decorre do tamanho de 30
+semanas por período, escolhido em função do tempo disponível para a coleta.
+
+Além do erro amostral, as estimativas estão sujeitas a erros não amostrais. Na
+duração, o uso de uma base que nem sempre identifica a versão single da música
+tende a superestimar a média, sobretudo nos anos 1970 e 1980, de modo que o pico
+de duração observado nesse período pode ser um pouco menor do que o estimado. Na
+proporção, considerar apenas o artista principal ignora as participações
+femininas, cada vez mais frequentes, e tende a subestimar a presença de mulheres
+nas décadas recentes. Nenhum desses efeitos, porém, parece grande o bastante para
+inverter as tendências encontradas.
+
+Em um estudo futuro, a precisão poderia ser melhorada com uma amostra maior,
+principalmente para a proporção, e a qualidade da medição, com a conferência de
+todas as durações em uma fonte que identifique a versão single, como a
+Wikipedia. Também seria interessante registrar a presença de mulheres entre os
+artistas participantes, o que permitiria analisar a presença feminina na parada
+de forma mais completa.
 
 
 # Referências
