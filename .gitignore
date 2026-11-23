@@ -1,15 +1,12 @@
 # R / RStudio
 .Rhistory
 .RData
+.Ruserdata
 .Rproj.user/
+
+# Arquivos temporários gerados ao compilar o relatório
 *_cache/
 *_files/
-
-# HTML gerado ao compilar os .Rmd (o código já reproduz tudo)
-*.html
-
-# Versões antigas do trabalho (ficam só no computador, não vão para o GitHub)
-_versao_anterior/
 
 # Sistema
 .DS_Store
