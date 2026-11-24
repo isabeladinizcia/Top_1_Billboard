@@ -2,10 +2,10 @@
 title: "Duração e presença feminina entre os 1º lugares da Billboard Hot 100 (1960–2026)"
 subtitle: "ME430 - Técnicas de Amostragem"
 author:
-  - "Dominique - RA: 123456"
-  - "Fernanda - RA: 234567"
+  - "Dominique Ribeiro Cardoso Veloso - RA: 206786"
+  - "Fernanda Sauer Kruger Di Vincenzo - RA: 280867"
   - "Isabela Diniz Cia - RA: 280902"
-  - "Matheus - RA: 456789"
+  - "Matheus Rodrigues da Silva - RA: 259256"
 date: "`r Sys.Date()`"
 output:
   bookdown::html_document2:
@@ -557,6 +557,21 @@ população, os planos praticamente empatam: o erro-padrão empírico da duraç�
 ficou entre `r num(min(comp_global$ep_dur))` e `r num(max(comp_global$ep_dur))`
 segundos, e os intervalos de 95% cobriram o valor de referência em
 `r pct(min(comp_global$cob_dur))` a `r pct(max(comp_global$cob_dur))` das amostras.
+O mesmo vale para a proporção de mulheres (Tabela \@ref(tab:tab-mc-global)).
+
+```{r tab-mc-global}
+comp_global %>%
+  transmute(Plano = plano,
+            ep_dur = num(ep_dur), cob_dur = pct(cob_dur, 1),
+            ep_prop = num(100 * ep_prop, 2), cob_prop = pct(cob_prop, 1)) %>%
+  kable(col.names = c("Plano", "EP empírico da duração (s)", "Cobertura do IC 95% (duração)",
+                      "EP empírico da proporção (p.p.)", "Cobertura do IC 95% (proporção)"),
+        align = "lrrrr",
+        caption = paste0("Desempenho de cada plano na estimativa de toda a população, em ", num(B, 0),
+                         " amostras de tamanho ", N_TOT, " sorteadas na população de referência: ",
+                         "erro-padrão empírico (desvio-padrão das estimativas) e porcentagem de ",
+                         "intervalos de 95% que contêm o valor de referência."))
+```
 
 A diferença aparece nas estimativas por período, que são o objetivo deste
 trabalho. A Figura \@ref(fig:fig-ic-medio) mostra, para cada alocação, a média das
